@@ -4,7 +4,7 @@
 <head>
 <!-- wy-obfs:v2 -->
 <meta charset="utf-8"/>
-<meta name="wy-full-protection" content="v5">
+<meta name="wy-full-protection" content="v6">
 <meta name="robots" content="noai, noimageai, noarchive, nosnippet"><meta name="googlebot" content="noai, noimageai"><meta name="GPTBot" content="noindex, nofollow">
 <style id="wy-preguard-style">html{visibility:hidden!important}</style>
 <script id="wy-preguard-js">
@@ -99,6 +99,12 @@
 <style id="wy-l3-print">
 @media print { html, body, body * { visibility: hidden !important; } }
 </style>
+
+
+
+
+
+
 
 
 
@@ -330,20 +336,8 @@ body{font-size:20px!important;}
 .ch-name{font-size:34px!important;}
 .read-progress{font-size:14px!important;padding:9px 24px!important;}
 </style>
-<meta content="v1" name="wy-obfuscated"/>
-<style data-wy-obfs="v2">
-@media print{
-  html,body{background:#fff!important;}
-  body *{visibility:hidden!important;}
-  body::after{
-    content:"本頁內容受保護，禁止列印。\A請前往原站閱讀";
-    white-space:pre;
-    visibility:visible;position:fixed;top:40%;left:0;right:0;
-    text-align:center;font-size:22px;color:#333;letter-spacing:4px;
-    font-family:"Noto Serif TC",serif;
-  }
-}
-</style>
+
+
 </head>
 <body>
 <!-- bx-devtools:v1 -->
@@ -409,52 +403,9 @@ body{font-size:20px!important;}
 })();
 </script>
 <!-- bx-bot-detect:v1 -->
-<script>
-(function(){
-  try{
-    var D=false;
-    if(navigator.webdriver===true) D=true;
-    if(/HeadlessChrome|PhantomJS|SlimerJS|Electron/i.test(navigator.userAgent||'')) D=true;
-    if(window._phantom||window.callPhantom||window.__nightmare) D=true;
-    if(window.__selenium_unwrapped||window.__webdriver_evaluate||window.__driver_evaluate||
-       window.__webdriver_script_fn||window.__fxdriver_evaluate||window.__selenium_evaluate) D=true;
-    if(window.Cypress||window.__pw_manual||window.__playwright||
-       window._puppeteer||window.__puppeteer_evaluation_script__) D=true;
-    if(navigator.languages && navigator.languages.length===0) D=true;
-    if(D){
-      try{
-        var html=document.documentElement;
-        html.innerHTML='<head><meta charset="utf-8"><title>受保護內容</title></head><body></body>';
-      }catch(e){}
-      var sh=document.createElement('div');
-      sh.setAttribute('id','bxBotShield');
-      sh.setAttribute('style','position:fixed;inset:0;z-index:2147483647;'+
-        'background:#1e1a14;color:#c4a76c;display:flex;align-items:center;justify-content:center;'+
-        'font:16px/1.8 "Noto Sans TC","Microsoft JhengHei",sans-serif;text-align:center;padding:40px;');
-      sh.innerHTML='<div><div style="color:#d4a84b;font-size:20px;margin-bottom:16px;">本頁內容受保護</div>'+
-        '偵測到自動化/爬蟲環境，內容無法顯示。<br>請在正常瀏覽器中訪問原站。</div>';
-      (document.body||document.documentElement).appendChild(sh);
-    }
-  }catch(e){}
-})();
-</script>
+
 <!-- 下載混淆層四：本機開啟警示 -->
-<div id="wy-offline-shield" style="display:none;position:fixed;inset:0;z-index:9999;
-  background:radial-gradient(ellipse at center,#1e1a14,#05040a 90%);
-  color:#d4a84b;align-items:center;justify-content:center;
-  font-family:'Noto Serif TC','Source Han Serif TC',serif;
-  text-align:center;padding:40px;">
-  <div>
-    <div style="font-size:52px;margin-bottom:18px;color:#b8860b;">⚠</div>
-    <h3 style="font-size:26px;letter-spacing:10px;margin:0 0 14px;color:#d4a84b;">本 頁 須 線 上 閱 讀</h3>
-    <p style="font-size:15.5px;letter-spacing:2px;line-height:2;color:#c4a76c;max-width:560px;margin:0 auto;">
-      本彙整本為線上閱讀版，禁止離線下載。<br>
-      若您偶然得到此檔，歡迎前往原站結緣閱讀：<br>
-      <a href="https://www.youtube.com/@Chengweiwen/" target="_blank" rel="noopener"
-         style="color:#d4a84b;border-bottom:1px dotted #b8860b;margin:0 4px;">https://www.youtube.com/@Chengweiwen/</a>
-    </p>
-  </div>
-</div>
+
 
 <button id="sbToggle">☰</button>
 <div class="read-progress" id="readProgress">
@@ -628,42 +579,6 @@ body{font-size:20px!important;}
     ns[i].removeAttribute('data-wy-t');
   }
 })();</script>
-<script data-wy-obfs="v2">
-(function(){
-  /* 第四層：file:// 協定偵測（必須最優先，放在解碼前） */
-  if(location.protocol==='file:'){
-    var sh=document.getElementById('wy-offline-shield');
-    if(sh){ sh.style.display='flex'; }
-    try{ document.querySelectorAll('iframe[data-src],iframe.ch-frame').forEach(function(f){ f.remove(); }); }catch(e){}
-    return;
-  }
-  /* 第一層：base64 → srcdoc runtime 解碼 */
-  try{
-    var dec=new TextDecoder('utf-8');
-    document.querySelectorAll('iframe[data-src]').forEach(function(f){
-      try{
-        var b64=f.getAttribute('data-src');
-        var bin=atob(b64);
-        var bytes=new Uint8Array(bin.length);
-        for(var i=0;i<bin.length;i++) bytes[i]=bin.charCodeAt(i);
-        f.setAttribute('srcdoc', dec.decode(bytes));
-        f.removeAttribute('data-src');
-      }catch(e){}
-    });
-  }catch(e){}
-  /* 第二層：鍵盤快捷鍵 · Cmd/Ctrl 雙覆蓋 */
-  document.addEventListener('keydown',function(e){
-    var k=(e.key||'').toLowerCase();
-    var mod=e.ctrlKey||e.metaKey;
-    if(mod && ['s','p','u','a','c','x'].indexOf(k)!==-1){ e.preventDefault();e.stopPropagation();}
-    if(k==='f12') e.preventDefault();
-    if(mod && e.shiftKey && ['i','j','c','k'].indexOf(k)!==-1){ e.preventDefault();}
-  },true);
-  /* 第三層：列印攔截 */
-  window.addEventListener('beforeprint',function(){ document.body.style.visibility='hidden'; });
-  window.addEventListener('afterprint',function(){ document.body.style.visibility=''; });
-  try{ window.print=function(){ return false; }; }catch(e){}
-})();
-</script>
+
 </body>
 </html>
