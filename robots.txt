@@ -1,0 +1,28 @@
+# https://weiwen0925.github.io/dazhidulun-9/robots.txt
+# 註：GitHub Pages 專案頁的 robots.txt 不會被 Google 視為網域層級規則
+#     （Google 只讀 https://weiwen0925.github.io/robots.txt）。
+#     本檔放在專案 repo 主要功能是宣告 Sitemap 與保留 self-documentation。
+
+User-agent: *
+Allow: /
+
+# 拒絕 AI 訓練爬蟲（HTML head meta 已同步宣告 noai/noimageai）
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+Sitemap: https://weiwen0925.github.io/dazhidulun-9/sitemap.xml
