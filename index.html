@@ -1193,4 +1193,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C9P10:END-->
+<!--WY-C9P11:BEGIN-->
+<style id="wy-c9p11-css">
+.c9p11-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c9p11-fabbox.show{display:block;}
+.c9p11-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c9p11-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c9p11-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c9p11-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c9p11-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c9p11-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c9p11-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c9p11-modal.open{display:flex;}
+.c9p11-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c9p11-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c9p11-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c9p11-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c9p11-close:hover{background:#e3d5b8;}
+.c9p11-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c9p11-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c9p11-tbl th,.c9p11-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c9p11-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c9p11-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c9p11-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c9p11-tbl b{color:#8b2500;}
+.c9p11-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c9p11-note b{color:#8b2500;}
+@media(max-width:900px){.c9p11-fabbox{right:14px;}.c9p11-tbl{font-size:11.5px;}.c9p11-card{padding:26px 14px 16px;}}
+</style>
+<div class="c9p11-fabbox" id="c9p11Box"><button class="c9p11-btn" id="c9p11Btn" type="button" aria-label="開啟全景總表"><span class="c9p11-ic">▦</span><span class="c9p11-ls"><span class="c9p11-l1">本品 · 釋十方諸佛</span><span class="c9p11-l2">諸佛何以不來 · 四層破感官迷思</span></span></button></div><div class="c9p11-modal" id="c9p11Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c9p11-card"><button class="c9p11-close" id="c9p11Close" type="button" aria-label="關閉">×</button><h3>卷九·第十一品 釋十方諸佛 · 全景總表</h3><p class="sub">卷九・第十一品｜罪重不見・釋迦盲點彌勒天宮・觀機待時・感應三證・二諦圓融</p><table class="c9p11-tbl"><caption>一、第一二層·主觀障礙與時空相對性（本品主骨架之一）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>設問與總綱</td><td>十方無量諸佛眾生多墮三惡道何以不來？答曰眾生罪重故諸佛雖來不見，<b>感知的缺乏不等於存在性的否定</b>，問題不在佛而在見</td></tr><tr><td>日月雷霆鏡水三喻</td><td>日出盲者不見（視覺障礙）・雷霆振地聾者不聞（聽覺障礙）・垢翳不淨無所見（反射障礙可清），共同點對境俱在根器有缺</td></tr><tr><td>罪垢屏障與心境淨化</td><td>法身佛常放光明如恆常訊號源眾生心如故障接收器，罪垢構成絕對屏障但可懺除，<b>心清淨則見佛心不淨則不見佛</b></td></tr><tr><td>釋迦盲點與彌勒歸謬</td><td>人與佛同國而生猶不遍見何況異處，彌勒近而不來不以為怪十方佛遠何足怪也——近而不見尚可容則遠而不見更當然</td></tr><tr><td>物理距離非感知保證</td><td>能否被感知與物理距離遠近無必然因果關係，十方佛遠故不來不來故無這條推論從根喪失效力</td></tr></tbody></table><table class="c9p11-tbl"><caption>二、第三四層·因緣方便與經驗實證（本品主骨架之二）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>觀機待時醫療模型</td><td>佛知一切眾生善根熟結使薄然後來度，佛來度精準落在兩線交會的醫療時機，<b>不來不等於無而等於時未至</b></td></tr><tr><td>方便善巧量表</td><td>先觀根器評估分流為不可度難度易化，度生變數（遲疾光明神足愍除不遮麁言軟言）可依根器精細調校</td></tr><tr><td>感應三則實證</td><td>遍吉菩薩摩身癩病即除愈（一心自歸）・比丘誦法華感召普賢乘白象國王見金光（緣起共振）・比丘誦彌陀般若臨終見佛舌不燒（物理證據）</td></tr><tr><td>心法深層結構</td><td>罪垢結薄→一心念佛→信淨不疑→必得見佛，倒漏斗結構揭示見佛是向內除垢的必然結果，終不虛也</td></tr><tr><td>邏輯轉向現量</td><td>前三層論證回答為何合理（比量），第四層以三則感應回答是否真有（現量），鑰匙是<b>一心自歸</b>的全然投注</td></tr></tbody></table><table class="c9p11-tbl"><caption>三、中觀義理·緣起去來與二諦圓融（本品的哲學收攝）</caption><thead><tr><th>架構</th><th>內容</th></tr></thead><tbody><tr><td>見佛的緣起性</td><td>見佛非獨立存在的實體事件而是因緣和合之果，因（眾生心清淨善根熟）加緣（法身佛常放光明）等於果（見佛聞法之顯現）</td></tr><tr><td>罪垢歸零變數</td><td>（法身之光）乘（眾生接收度）等於見佛體驗，罪垢趨近無窮則接收度趨近零，<b>佛光未減眾生卻一無所見</b></td></tr><tr><td>去來的如幻性</td><td>法身遍滿不動→清淨心生起（因緣）→隨緣現前（如幻顯現），如水中月未曾下降入水只是水清則月自現</td></tr><tr><td>二諦圓融交疊</td><td>勝義諦法身佛遍滿虛空常放光明不來不去，世俗諦隨眾生感應因緣示現有來度之幻相，交疊處即中道</td></tr><tr><td>緣生幻有定位</td><td>感應事蹟從世俗諦視之是因果不虛的鐵證，從勝義諦視之皆無自性，<b>緣生幻有是有與空之間不偏不倚的中道接點</b></td></tr></tbody></table><p class="c9p11-note">十方諸佛的存在從未間斷，感應的鑰匙始終握在向內求索的一心之中。罪重如盲不見日，水垢不清影難現；善根若熟佛自來，感應道交憑心念；法身常照本無去，莫怪十方佛不見——與其向外追問諸佛何以不來，<b>不如向內反省我心何以未淨</b>。</p></div></div>
+<script id="wy-c9p11-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c9p11Btn"),BOX=document.getElementById("c9p11Box"),MODAL=document.getElementById("c9p11Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=10;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c9p11Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C9P11:END-->
 </body></html>
