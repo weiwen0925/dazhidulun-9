@@ -769,4 +769,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C9P2:END-->
+<!--WY-C9P3:BEGIN-->
+<style id="wy-c9p3-css">
+.c9p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c9p3-fabbox.show{display:block;}
+.c9p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c9p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c9p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c9p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c9p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c9p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c9p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c9p3-modal.open{display:flex;}
+.c9p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c9p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c9p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c9p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c9p3-close:hover{background:#e3d5b8;}
+.c9p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c9p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c9p3-tbl th,.c9p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c9p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c9p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c9p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c9p3-tbl b{color:#8b2500;}
+.c9p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c9p3-note b{color:#8b2500;}
+@media(max-width:900px){.c9p3-fabbox{right:14px;}.c9p3-tbl{font-size:11.5px;}.c9p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c9p3-fabbox" id="c9p3Box"><button class="c9p3-btn" id="c9p3Btn" type="button" aria-label="開啟全景總表"><span class="c9p3-ic">▦</span><span class="c9p3-ls"><span class="c9p3-l1">本品 · 散華供養</span><span class="c9p3-l2">由見至行 · 三輪體空的供養哲學</span></span></button></div><div class="c9p3-modal" id="c9p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c9p3-card"><button class="c9p3-close" id="c9p3Close" type="button" aria-label="關閉">×</button><h3>卷九·第三品 散華供養 · 全景總表</h3><p class="sub">卷九・第三品｜恭敬供養・情感感官理性三層・歡喜為供・識得真田・三輪體空</p><table class="c9p3-tbl"><caption>一、現象的邏輯解剖·情感感官理性三層（本品主骨架）</caption><thead><tr><th>層次</th><th>內容</th></tr></thead><tbody><tr><td>情感層</td><td>「恭敬供養故」——最基礎的出發點，眾生對佛懷崇高敬意，自然反饋以最美好之物奉獻，回答「為何起意散華」</td></tr><tr><td>感官層</td><td>「佛光照皆遙見佛」——光明照引呼應佛放大光明照三千世界的經文脈絡，眾生見莊嚴光明生巨大喜悅，回答「為何此刻散華」</td></tr><tr><td>理性層</td><td>「佛於三界第一福田」——農夫耕種必選最肥沃之田，微供落於第一福田即收巨大果報，回答「為何散在佛身而非別處」</td></tr><tr><td>由見至行映射</td><td>觸發點（佛光照遙見佛·緣）→反應（心大歡喜·因）→行動（皆以諸華而散·果），<b>緣因果環環相扣</b>的剎那連動</td></tr><tr><td>情理統一</td><td>散華既是純粹恭敬的自然流露（情感最深表達），亦是基於第一福田法則的至高理性選擇（理性最精準實踐），情理合流無矛盾</td></tr></tbody></table><table class="c9p3-tbl"><caption>二、借境修心之內在機制·三條心法</caption><thead><tr><th>心法</th><th>內容</th></tr></thead><tbody><tr><td>心法一·歡喜心即供養</td><td>供養究竟價值不在天華珍貴而在那一念清淨歡喜，外在華供只是歡喜的具象化承載，<b>歡喜是種子</b>，散華是種子破土而出的形相</td></tr><tr><td>捨與得的辯證</td><td>散華是「捨」、歡喜是「得」，一捨一得同一念中相生不息，在捨棄外物當下即已獲得法喜——物質消耗完成精神圓滿</td></tr><tr><td>心法二·識得真田</td><td>修行者須具擇法眼，真正勝妙功德是「對的地方（第一福田）・對的心境（恭敬歡喜）・對的事行（散華布施）」三圓相交</td></tr><tr><td>心法三·見即起行</td><td>遙見佛而皆以諸華而散——感應道交的展現，「看見」與「起行」之間不容遲疑，唯有當下無間才能讓加持轉為功德</td></tr><tr><td>功德閉環迴路</td><td>加持（境）→信解（心）→實踐（行）→功德，境轉心、心轉行，<b>順時針生生不息</b>的完整能量循環</td></tr></tbody></table><table class="c9p3-tbl"><caption>三、中觀哲學之透視·緣起與三輪體空</caption><thead><tr><th>架構</th><th>內容</th></tr></thead><tbody><tr><td>緣起觀（非無因生）</td><td>無佛光（緣）則無遙見，無遙見則無歡喜（因），無歡喜則無散華（果）——每一環節依他而起，因緣和合的法界顯影</td></tr><tr><td>福田觀·能所相待</td><td>能（供者·眾生播種者）與所（受供之佛·第一福田）相待而有，若無田種子無處生根、若無心供養全無功德</td></tr><tr><td>供養三角矩陣</td><td>能供（眾生恭敬歡喜心）・所供（佛·第一福田）・供物（華）三輪相待而成一場完整供養法事，缺一不可</td></tr><tr><td>世俗諦·因果效力</td><td>嚴格承認第一福田具無可替代之因果效力，散華是基於確鑿法則的精準實踐，非迷信而是理性信受</td></tr><tr><td>勝義諦·三輪體空</td><td>能供之人、所供之佛、供物之華三者於究竟義上皆無獨立自存實體，<b>體性皆空猶如幻化</b>，因少果多正因三輪體空而得無限展開</td></tr></tbody></table><p class="c9p3-note">一朵供佛之華，含攝由相入性的五重觀照。散華之舉在情感層是恭敬的自然流露，在心法層是歡喜為種的功德閉環，在中觀層則是三輪體空的緣起顯影——世俗諦上嚴守因果精選福田，勝義諦上能所物三輪皆空不執不取。正因勝義諦不取，世俗諦的因果反而得以盡情展開；正因世俗諦不廢，勝義諦的空性才不墮虛無。<b>一花一世界，一散華而證中觀</b>。</p></div></div>
+<script id="wy-c9p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c9p3Btn"),BOX=document.getElementById("c9p3Box"),MODAL=document.getElementById("c9p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c9p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C9P3:END-->
 </body></html>
