@@ -981,4 +981,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C9P6:END-->
+<!--WY-C9P7:BEGIN-->
+<style id="wy-c9p7-css">
+.c9p7-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c9p7-fabbox.show{display:block;}
+.c9p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c9p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c9p7-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c9p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c9p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c9p7-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c9p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c9p7-modal.open{display:flex;}
+.c9p7-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c9p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c9p7-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c9p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c9p7-close:hover{background:#e3d5b8;}
+.c9p7-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c9p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c9p7-tbl th,.c9p7-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c9p7-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c9p7-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c9p7-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c9p7-tbl b{color:#8b2500;}
+.c9p7-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c9p7-note b{color:#8b2500;}
+@media(max-width:900px){.c9p7-fabbox{right:14px;}.c9p7-tbl{font-size:11.5px;}.c9p7-card{padding:26px 14px 16px;}}
+</style>
+<div class="c9p7-fabbox" id="c9p7Box"><button class="c9p7-btn" id="c9p7Btn" type="button" aria-label="開啟全景總表"><span class="c9p7-ic">▦</span><span class="c9p7-ls"><span class="c9p7-l1">本品 · 普現色身</span><span class="c9p7-l2">一身現前 · 非一非異的中道正觀</span></span></button></div><div class="c9p7-modal" id="c9p7Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c9p7-card"><button class="c9p7-close" id="c9p7Close" type="button" aria-label="關閉">×</button><h3>卷九·第七品 普現色身 · 全景總表</h3><p class="sub">卷九・第七品｜各各見佛在前・二種神力・千江有水千江月・非一非異・如幻如化</p><table class="c9p7-tbl"><caption>一、事理邏輯·佛具二種神力與應機施教（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>核心叩問</td><td>經文載三千大千世界及十方眾生各各自念佛獨為我說法不為餘人，論主設問佛以一身示十方何以各各見佛在前，物理單一實體與感知無限顯現之矛盾</td></tr><tr><td>神力一·廣播模式</td><td>一處坐說法令諸眾生遠處皆見皆聞，解決看得見聽得到的物理可達性問題，佛身不動訊號增幅消弭空間維度障礙</td></tr><tr><td>神力二·客製化模式</td><td>佛在一處說法能令一一眾生各自見佛在前，解決這是對我說的心理親和性問題，<b>非物理分身而是法身如一應化如無量</b></td></tr><tr><td>核心譬喻·日出影現眾水</td><td>太陽（唯一·佛的法身本體）、陽光（媒介·佛的神力）、眾水（多樣·眾生心識根器）、倒影（無限·各各見佛在前），太陽只一倒影千萬互不妨礙</td></tr><tr><td>受眾分析矩陣</td><td>宏觀視角好大者見佛身遍三千大千得淨信生敬畏，微觀視角好親者見佛在前得心清淨信樂歡喜，雙軌並行圓滿涵蓋所有根器</td></tr></tbody></table><table class="c9p7-tbl"><caption>二、實修心法·千江有水千江月與打破隔閡</caption><thead><tr><th>心法</th><th>內容</th></tr></thead><tbody><tr><td>感應道交機制</td><td>佛不主動來是眾生心淨而現，修行不是向外抓取太陽而是向內平息水波，<b>感應品質取決於心識澄澈度</b></td></tr><tr><td>打破空間隔閡</td><td>神力二瓦解佛在遙遠他方我於此岸仰望的空間階層感，從遙拜西方轉化為當下即是，佛光環繞當下此身毫無距離</td></tr><tr><td>專屬感三重升級</td><td>化泛為專（抽象真理轉化為量身定制的親身教誨）・絕對專注（消除群體學習中旁觀者效應）・信樂激發（極大化修行歡喜心）</td></tr><tr><td>三步內化路徑</td><td>一認可機制確信佛陀具全息應化能力→二端正發心視每次聞法為佛獨為我的殊勝因緣→三淨化心水專注當下以清淨心映照法身</td></tr><tr><td>心法總結</td><td>經文不僅是敘事更是指導禪修與建立正信的標準程序，日光不曾偏私水波卻能自障，這是感應道交的必然邏輯</td></tr></tbody></table><table class="c9p7-tbl"><caption>三、中觀究竟·非一非異與如幻如化</caption><thead><tr><th>架構</th><th>內容</th></tr></thead><tbody><tr><td>雙重觀測工具</td><td>觀一異品（本體論·檢視一與多的邏輯極限）與觀緣起（緣起論·解析現象生成的條件），前者破本體執取後者破生成迷惑</td></tr><tr><td>破除絕對一與異</td><td>若絕對同一則所有人應見同一實體，矛盾在何以各各見佛在前，故非一；若絕對相異則佛身已被分割，故非異</td></tr><tr><td>中道正觀·非一非異</td><td><b>非異</b>（影不離日，沒有法身太陽就沒有化身倒影），<b>非一</b>（影不即是日，水中倒影並非太陽實體），佛身如日影現如水</td></tr><tr><td>緣起因果方程式</td><td>因（佛的無上神力·太陽的光芒）加緣（眾生的清淨信樂心·平靜的眾水）等於果（各自見佛在前說法·完美的水中倒影）</td></tr><tr><td>究竟本質·如幻如化救度</td><td>面前的佛是因緣和合而生故無獨立不變實體，正因如幻如化才能無礙穿越時空以如幻化身度化世間如幻眾生</td></tr></tbody></table><p class="c9p7-note">日出一天映萬川，一處說法眾皆見，面前獨說生歡喜，不一不異影現前——四句口訣攝盡全品精華。<b>理徹則信堅，心淨則佛現</b>：當理路徹底信心便不再依賴神通的渲染，當心水澄澈佛影便自然映現於當下，這正是普現色身一品留給讀者的中道心印。</p></div></div>
+<script id="wy-c9p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c9p7Btn"),BOX=document.getElementById("c9p7Box"),MODAL=document.getElementById("c9p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,.yt-float,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c9p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C9P7:END-->
 </body></html>
