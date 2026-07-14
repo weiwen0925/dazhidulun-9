@@ -1996,4 +1996,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH9P3:END-->
+<!--WY-BH9P4:BEGIN-->
+<style id="wy-bh9p4-css">
+.bh9p4-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh9p4-fabbox.show{display:block;}
+.bh9p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh9p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh9p4-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh9p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh9p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh9p4-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh9p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh9p4-modal.open{display:flex;}
+.bh9p4-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh9p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh9p4-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh9p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh9p4-close:hover{background:#dde2e6;}
+.bh9p4-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh9p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh9p4-tbl th,.bh9p4-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh9p4-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh9p4-tbl thead th:nth-child(1){width:32%;}.bh9p4-tbl thead th:nth-child(2){width:41%;}.bh9p4-tbl thead th:nth-child(3){width:27%;}
+.bh9p4-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh9p4-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh9p4-guan{background:#eef2f5;color:#37505f;}
+.bh9p4-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh9p4-tbl tbody tr:nth-child(even) td.bh9p4-guan{background:#e8eef2;}
+.bh9p4-tbl tbody tr:nth-child(even) td.bh9p4-qa{background:#e7ecdb;}
+.bh9p4-tbl b{color:#8b2500;}
+.bh9p4-guan b{color:#2f6b5a;}
+.bh9p4-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh9p4-note b{color:#8b2500;}
+@media(max-width:900px){.bh9p4-fabbox{right:14px;}.bh9p4-tbl{font-size:11px;}.bh9p4-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh9p4-fabbox" id="bh9p4Box"><button class="bh9p4-btn" id="bh9p4Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh9p4-ic">譯</span><span class="bh9p4-ls"><span class="bh9p4-l1">本品 · 原文·白話·中觀</span><span class="bh9p4-l2">白話翻譯表</span></span></button></div><div class="bh9p4-modal" id="bh9p4Modal" role="dialog" aria-modal="true"><div class="bh9p4-card"><button class="bh9p4-close" id="bh9p4Close" type="button" aria-label="關閉">×</button><h3>卷九 · 第4品 白話翻譯表（虛空寶臺的哲學解構）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷九・第四品・虛空寶臺的哲學解構</p><table class="bh9p4-tbl"><caption>虛空寶臺的哲學解構 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh9p4-src">所散寶華，於此三千大千世界上，在虛空中化成大臺。</td><td>眾人所散布供養的珍寶花朵，在這三千大千世界的上空，於虛空之中，化現成一座巨大的樓臺。</td><td class="bh9p4-guan"><b>經文標宗——微因與巨果的示現</b>——本段以「所散寶華化成大臺」揭示全品要解析的現象：供養的華朵原本輕微，卻在虛空中化為宏偉巨臺。此一因果懸殊之相，正是後文兩問所要追問的緣起法則，亦是「小因不可思議大果」的具體示現。</td></tr><tr><td class="bh9p4-qa">問曰：何以化作此臺在虛空中？</td><td>有人問：為什麼要把這華朵化作樓臺，並且懸浮於虛空之中呢？</td><td class="bh9p4-guan"><b>設問——因果量級為何懸殊</b>——此問直指「量」的疑惑：所供養之華甚少，所化現之臺極大，因與果之間的比例明顯失衡，逼顯出「因少果多」這一佛法因果觀的核心命題，而非世俗等量交換的邏輯。</td></tr><tr><td class="bh9p4-qa">答曰：所散華少而化為大臺，以示眾生因少果多。</td><td>回答說：正因為所散的華朵雖少，卻能化現為廣大的樓臺，用意是要向眾生顯示——因雖微小，果報卻能廣大。</td><td class="bh9p4-guan"><b>因少果多——福田緣起不可思議</b>——此答揭示大乘因果觀的關鍵：果報之大小，並不由因之外在數量決定，而由因緣和合的性質、對境（佛）之殊勝而定。供養佛之微因，緣起感得廣大果報，正顯「緣起甚深、非凡情所能度量」，破除以世俗等量思惟衡量福德的邪見。</td></tr><tr><td class="bh9p4-qa">問曰：何以故臺在虛空中住而不墮落？</td><td>有人又問：為什麼這座樓臺能懸住在虛空之中，卻不會墜落呢？</td><td class="bh9p4-guan"><b>設問——果報能否跨時保存</b>——此問承前，從「量的懸殊」轉向「時間的存續」：若因果之相如石塊終將墜落消散，則修行供養毫無恆常意義；此問逼顯論主必須說明業果保存不失的法則。</td></tr><tr><td class="bh9p4-qa">答曰：佛以神力欲示眾生令知佛為福田得報不失，乃至成佛其福不滅。</td><td>回答說：佛以神通之力，是要向眾生顯示——供養佛這塊無上福田所得的果報，永遠不會喪失，乃至一路修行到成佛之時，這份福德依然不會消滅。</td><td class="bh9p4-guan"><b>福田不失——業果緣起而不斷滅</b>——此答揭示「業性本空、雖空亦不斷」的中道法則：福德果報雖無自性可得（緣起故空），卻能在因緣相續中如實不失（空而不斷），既非常住不變之實有，亦非斷滅消失之虛無，正是中觀「不常不斷」的具體印證。</td></tr></tbody></table><p class="bh9p4-note">卷九第4品「虛空寶臺的哲學解構」：承散華供養之後，經文記述所散寶華於虛空化成大臺，論主以兩問兩答釋其「因少果多」與「福田不失」二理，闡明供養佛陀之因緣雖微，緣起所感之果報卻廣大而恆存，正顯業果「不常不斷」的中道法則。原文白話中觀三欄對照，經在最頂，兩問兩答依序相隨。　中觀關鍵詞：因少果多 福田緣起 業果不失 不常不斷 神力示現</p></div></div>
+<script id="wy-bh9p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh9p4Btn"),BOX=document.getElementById("bh9p4Box"),MODAL=document.getElementById("bh9p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c9p4Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh9p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH9P4:END-->
 </body></html>
