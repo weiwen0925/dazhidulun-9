@@ -2251,4 +2251,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH9P8:END-->
+<!--WY-BH9P9:BEGIN-->
+<style id="wy-bh9p9-css">
+.bh9p9-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh9p9-fabbox.show{display:block;}
+.bh9p9-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh9p9-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh9p9-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh9p9-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh9p9-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh9p9-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh9p9-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh9p9-modal.open{display:flex;}
+.bh9p9-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh9p9-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh9p9-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh9p9-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh9p9-close:hover{background:#dde2e6;}
+.bh9p9-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh9p9-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh9p9-tbl th,.bh9p9-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh9p9-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh9p9-tbl thead th:nth-child(1){width:32%;}.bh9p9-tbl thead th:nth-child(2){width:41%;}.bh9p9-tbl thead th:nth-child(3){width:27%;}
+.bh9p9-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh9p9-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh9p9-guan{background:#eef2f5;color:#37505f;}
+.bh9p9-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh9p9-tbl tbody tr:nth-child(even) td.bh9p9-guan{background:#e8eef2;}
+.bh9p9-tbl tbody tr:nth-child(even) td.bh9p9-qa{background:#e7ecdb;}
+.bh9p9-tbl b{color:#8b2500;}
+.bh9p9-guan b{color:#2f6b5a;}
+.bh9p9-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh9p9-note b{color:#8b2500;}
+@media(max-width:900px){.bh9p9-fabbox{right:14px;}.bh9p9-tbl{font-size:11px;}.bh9p9-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh9p9-fabbox" id="bh9p9Box"><button class="bh9p9-btn" id="bh9p9Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh9p9-ic">譯</span><span class="bh9p9-ls"><span class="bh9p9-l1">本品 · 原文·白話·中觀</span><span class="bh9p9-l2">白話翻譯表</span></span></button></div><div class="bh9p9-modal" id="bh9p9Modal" role="dialog" aria-modal="true"><div class="bh9p9-card"><button class="bh9p9-close" id="bh9p9Close" type="button" aria-label="關閉">×</button><h3>卷九 · 第9品 白話翻譯表（十方菩薩來釋論）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷九・第9品・十方菩薩來釋論</p><table class="bh9p9-tbl"><caption>十方菩薩來釋論 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh9p9-src">是時，東方過如恒河沙等諸佛世界，其世界最在邊，世界名多寶，佛號寶積，今現在為諸菩薩摩訶薩說般若波羅蜜。</td><td>那時，在東方越過恆河沙數那樣多的諸佛世界之外，有一個世界，是所有這些世界當中最靠邊際的，這個世界名叫多寶，那裡的佛名號叫寶積，如今正在為諸位菩薩摩訶薩宣說般若波羅蜜。</td><td class="bh9p9-guan"><b>經文標宗——三個名相的哲學伏筆</b>——經文以一句敘事，同時埋下三個關鍵名相：「最在邊」、「多寶」、「寶積」。論主隨即以三組問答逐一針對這三個名相展開辯析，分別對應空間的悖論、價值的叩問、命名的質疑，是全品論證的文本根源。</td></tr><tr><td class="bh9p9-qa">問曰：如佛所說「一切世界無量無邊」，云何言「其世界最在邊」？「最在邊」者，是墮有邊相；若世界有邊，眾生應盡。何以故？無量諸佛，一一佛度無量阿僧祇眾生令入無餘涅槃，更無新眾生，故者應盡！</td><td>有人問：就像佛所說的「一切世界無量無邊」，那為什麼又說「這個世界是最靠邊際的」呢？所謂「最在邊」，就是落入了「有邊相」；如果世界是有邊際的，那麼眾生應當已經被度盡了。為什麼呢？因為無量無數的諸佛，每一位佛都度化無量阿僧祇那樣多的眾生，使他們進入無餘涅槃，卻沒有新的眾生產生，所以照理眾生應該早就被度盡了才對！</td><td class="bh9p9-guan"><b>設問——世界無邊與最在邊的字面衝突</b>——此問直指「一切世界無量無邊」與「其世界最在邊」兩個前提無法同時為真的邏輯死結：若世界無邊，何來「最在邊」之緣？若有「最在邊」，世界便墮入「有邊相」，進而導出眾生應盡的荒謬結論，違反現實。</td></tr><tr><td class="bh9p9-qa">答曰：佛經雖言世界無量，此方便說，非是實教。如實無神，方便故說言有神。此十四難，世界有邊、無邊俱為邪見。若無邊，佛不應有一切智。何以故？智慧普知，無物不盡，是名一切智。若世界無邊，是有所不盡。若有邊，如先說咎。此二俱邪見。何以故？依無邊以破有邊故。是多寶世界非一切世界邊，是釋迦牟尼佛因緣眾生可應度者最在邊。譬如一國中最在邊，不言一閻浮提最在邊。若無邊，佛不應一切智者，如上佛義中答，佛智無量故應知，譬如函大故蓋亦大。</td><td>回答說：佛經雖然說世界無量無邊，這只是一種方便的說法，並不是究竟真實的教理。就好比實際上並沒有一個常存的「神我」，只是方便才說有「神我」一樣。這屬於「十四難」的範圍，無論說世界「有邊」或「無邊」，都是邪見。如果說世界絕對無邊，那麼佛就不應該具有一切智。為什麼呢？因為智慧要普遍了知一切、沒有任何事物不能窮盡，才稱得上是一切智；如果世界絕對無邊，就必然會有窮盡不了的地方。如果說世界絕對有邊，又會導致前面所說眾生應盡的過失。所以「有邊」「無邊」這兩種說法都是邪見。為什麼呢？因為「無邊」的說法，本來就是用來破除「有邊」這種執著的方便手段而已。這個多寶世界，並不是說它是一切世界的邊際，而是說它是釋迦牟尼佛因緣所及、可以度化的眾生範圍中最靠邊的地方。就好比說某個地方是一個國家的邊境，卻不能說它是整個閻浮提（大地）的邊境。至於說「若無邊，佛就不能稱一切智」，如同前面所回答佛智的道理，應當知道佛的智慧是無量的，就好比容器大，蓋子也就跟著大一樣。</td><td class="bh9p9-guan"><b>破斥兩邊——依無邊破有邊·藥病雙遣</b>——論主以「方便說」定調全段：世界有邊、無邊皆為十四無記中的邪見，「無量」一語本是藥，用以對治「有邊」之病，病去則藥亦當捨，不可另立為實教。「最在邊」實指釋迦佛因緣所及、可度眾生範圍之邊際，而非宇宙整體之邊際，如同一國邊境不等於閻浮提邊境。此答正是中觀「不落兩邊、方便安立」精神的典範演示。</td></tr><tr><td class="bh9p9-qa">問曰：世界名多寶。寶有二種：財寶、法寶，何等寶多名為「多寶世界」？</td><td>有人問：這個世界名叫多寶。寶有兩種：一種是財寶，一種是法寶，那麼是哪一種寶特別多，才稱之為「多寶世界」呢？</td><td class="bh9p9-guan"><b>設問——價值論的叩問</b>——此問針對「多寶」之名提出精確的分類質疑：究竟所多之寶，是世間財寶之多，還是出世法寶之多？藉此逼顯「寶」的定義本身即涉及價值論的抉擇。</td></tr><tr><td class="bh9p9-qa">答曰：二種皆有。又多菩薩照法性等諸寶(言此寶大菩薩所有，以為寶冠；寶冠中皆見諸佛。又了達一切諸法之性)，多故名為「多寶」。是中有佛名「寶積」。以無漏根、力、覺、道等法寶集故，名為「寶積」。</td><td>回答說：兩種寶都具足。而且還有眾多菩薩，以照見諸法實相等種種法寶莊嚴自身（這是說這種寶物是大菩薩所擁有的，用來作為寶冠；在寶冠之中，能夠見到十方諸佛，並且通達一切諸法的實性），因為這樣的法寶眾多，所以稱為「多寶」。這個世界中有一位佛，名號叫「寶積」，是因為以無漏的五根、五力、七覺支、八正道等種種法寶積聚而成，所以稱為「寶積」。</td><td class="bh9p9-guan"><b>破斥財寶偏執——法寶為多寶之實義</b>——論主雖不否定財寶亦在其中，卻將論述重心落在「法寶」：菩薩以照見諸法性之寶莊嚴、佛以無漏根力覺道等法寶積聚而成「寶積」之名。此答揭示「多寶」真正所指，並非世間財富的堆積，而是無漏功德法財的圓滿積聚，破除以世俗價值衡量佛法莊嚴的偏執。</td></tr><tr><td class="bh9p9-qa">問曰：若爾者，一切佛皆應號寶積！何以獨稱彼佛為「寶積」？</td><td>有人問：如果是這樣的話，那麼一切諸佛都應該稱號為「寶積」才對！為什麼偏偏只稱那一尊佛為「寶積」呢？</td><td class="bh9p9-guan"><b>設問——命名邏輯的質疑</b>——既然一切諸佛皆具無漏法寶積聚之德，理應人人皆可稱「寶積」，此問直指佛號命名是否具有普遍必然性，抑或只是個別因緣的安立。</td></tr><tr><td class="bh9p9-qa">答曰：雖一切諸佛皆有此寶，但彼佛即以此寶為名。如彌勒名為慈氏，諸佛雖皆有慈，但彌勒即以慈為名。復次，如寶華佛生時，一切身邊有種種華色光明故，名寶華太子。如燃燈佛生時，一切身邊如燈故，名燃燈太子，作佛亦名燃燈(丹注云：舊名定光佛也)。寶積佛亦如是，應當初生時亦多諸寶物生，或地生、或天雨，種種寶集故名為「寶積」。</td><td>回答說：雖然一切諸佛都具有這樣的法寶功德，但那一尊佛正是以這個特質作為自己的名號。就好比彌勒菩薩名為「慈氏」，一切諸佛雖然都具有慈心，但彌勒卻是以「慈」作為自己的名號。又例如寶華佛出生的時候，周身四周出現種種花色的光明，因此被稱為寶華太子；又如燃燈佛出生的時候，周身四周如同燈光一般，因此被稱為燃燈太子，成佛之後也稱為燃燈佛（古注說：舊譯名為定光佛）。寶積佛也是同樣的道理，應當是在他初出生的時候，也有眾多的寶物出現，或從地中湧出，或從天而降，因為種種寶物聚集的緣故，所以稱為「寶積」。</td><td class="bh9p9-guan"><b>破斥命名質疑——因緣別異·各以德顯</b>——論主以彌勒因慈得名、寶華與燃燈因誕生瑞相得名為喻，說明一切諸佛雖同具功德，但佛號安立乃隨各自出世因緣、特殊瑞相而顯其別稱，並非否定其他諸佛亦具此德。此答呈現中觀「共德與別名不相妨礙」之理：普遍性的功德與個別性的因緣示現，二者並行不悖。</td></tr></tbody></table><p class="bh9p9-note">卷九第9品「十方菩薩來釋論」：經文先呈現東方多寶世界、寶積佛之敘事，埋下「最在邊」「多寶」「寶積」三個名相；論主以三組問答逐一辯析——第一組破「世界有邊、無邊」二執，安立「依無邊破有邊」之方便說；第二組破「多寶」偏於財寶之執，顯法寶積聚之實義；第三組破「何以獨稱寶積」之命名質疑，明因緣別異、各以德顯。原文白話中觀三欄對照，經在最頂，三組問答依次排列，問在答前。　中觀關鍵詞：十四難 方便說 依無邊破有邊 法寶積聚 因緣別名</p></div></div>
+<script id="wy-bh9p9-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh9p9Btn"),BOX=document.getElementById("bh9p9Box"),MODAL=document.getElementById("bh9p9Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=8;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c9p9Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh9p9Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH9P9:END-->
 </body></html>
