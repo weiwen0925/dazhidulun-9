@@ -2455,4 +2455,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH9P12:END-->
+<!--WY-BH9P13:BEGIN-->
+<style id="wy-bh9p13-css">
+.bh9p13-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh9p13-fabbox.show{display:block;}
+.bh9p13-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh9p13-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh9p13-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh9p13-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh9p13-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh9p13-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh9p13-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh9p13-modal.open{display:flex;}
+.bh9p13-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh9p13-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh9p13-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh9p13-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh9p13-close:hover{background:#dde2e6;}
+.bh9p13-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh9p13-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh9p13-tbl th,.bh9p13-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh9p13-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh9p13-tbl thead th:nth-child(1){width:32%;}.bh9p13-tbl thead th:nth-child(2){width:41%;}.bh9p13-tbl thead th:nth-child(3){width:27%;}
+.bh9p13-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh9p13-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh9p13-guan{background:#eef2f5;color:#37505f;}
+.bh9p13-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh9p13-tbl tbody tr:nth-child(even) td.bh9p13-guan{background:#e8eef2;}
+.bh9p13-tbl tbody tr:nth-child(even) td.bh9p13-qa{background:#e7ecdb;}
+.bh9p13-tbl b{color:#8b2500;}
+.bh9p13-guan b{color:#2f6b5a;}
+.bh9p13-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh9p13-note b{color:#8b2500;}
+@media(max-width:900px){.bh9p13-fabbox{right:14px;}.bh9p13-tbl{font-size:11px;}.bh9p13-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh9p13-fabbox" id="bh9p13Box"><button class="bh9p13-btn" id="bh9p13Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh9p13-ic">譯</span><span class="bh9p13-ls"><span class="bh9p13-l1">本品 · 原文·白話·中觀</span><span class="bh9p13-l2">白話翻譯表</span></span></button></div><div class="bh9p13-modal" id="bh9p13Modal" role="dialog" aria-modal="true"><div class="bh9p13-card"><button class="bh9p13-close" id="bh9p13Close" type="button" aria-label="關閉">×</button><h3>卷九 · 第13品 白話翻譯表（普明菩薩問光明因緣）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷九・第十三品・普明菩薩問光明因緣</p><table class="bh9p13-tbl"><caption>普明菩薩問光明因緣 · 原文｜白話翻譯｜中觀概念（共9段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh9p13-src">見此大光，見地大動，又見佛身。到寶積佛所，白佛言：</td><td>普明菩薩見到這樣的大光明，見到大地震動，又見到佛身，便回到寶積佛的座前，稟白佛說：</td><td class="bh9p13-guan"><b>經文標宗——三相親見</b>——普明菩薩先於他方世界親見大光、地動、佛身三相，返本國向本師寶積佛稟白，開啟一問一答之緣起。此段經文雖簡，卻具足「親見→返本→請問」之敘事節奏，為論主展開五重解答預留空間。</td></tr><tr><td class="bh9p13-src">普明菩薩白佛言：「世尊！今何因緣有此光明照於世間，地大震動，又見佛身？」</td><td>普明菩薩對佛稟白說：「世尊！如今是什麼因緣，使得這樣的光明照耀世間，大地又如此震動，並且能見到佛身呢？」</td><td class="bh9p13-guan"><b>設問——因緣之問</b>——普明菩薩就所親見的三種瑞相，直接請問世尊其中因緣。此問看似平常請益，實則揭開下文論主自設一問、五重答辯之序幕，顯示凡殊勝境相皆有其因緣可尋，非無故而有。</td></tr><tr><td class="bh9p13-src">地動、佛身、光明如先說。</td><td>關於大地震動、佛身相好、光明的作用，如同先前所說，這裡不再重複解釋。</td><td class="bh9p13-guan"><b>總束前文——不繁複說</b>——論主以一句總束前品已詳釋之三事，是龍樹菩薩行文之慣例：凡前已詳者，後文但標而已。三事既已「先說」，論鋒便轉而集中在「普明菩薩為何發問」這一問題上。</td></tr><tr><td class="bh9p13-qa">問曰：是普明菩薩於諸菩薩中最尊第一，應自知因緣，何以問佛？</td><td>有人問：這位普明菩薩在諸菩薩中是最尊貴、最為第一的，應當自己就能知曉其中因緣，為什麼還要問佛呢？</td><td class="bh9p13-guan"><b>詮釋學悖論——最尊何以發問</b>——此問由「預設（普明菩薩諸菩薩中最尊第一）→行為（依然向寶積佛鄭重發問）→衝突（全知能力與無知示現的邏輯矛盾）」三環節構成，是本品論釋的核心張力所在，下文五答即依此層層化解。</td></tr><tr><td class="bh9p13-src">答一：是普明菩薩雖大，不能知諸佛智慧、神力；譬如月光雖大，日出則滅。以是故問佛。</td><td>回答一：這位普明菩薩雖然位階崇高，卻仍不能徹知諸佛的智慧、神力；就好比月光雖然明亮，太陽一出，月光便隱沒不現。因此他要向佛請問。</td><td class="bh9p13-guan"><b>智慧相對界限——月光日出喻</b>——菩薩之智相對於諸小菩薩固然廣大，相對佛智卻仍有所不及，並非「量」的差異，而是「維度」的不同。月光雖大，日出則滅，正顯示智慧非固定不變的自性，而是隨所對待的境界而顯現高下，此即中觀「相待而有、無自性」之理。</td></tr><tr><td class="bh9p13-src">答二：復次，菩薩常欲見佛，心無厭足；無因緣尚欲見佛，何況有大因緣！</td><td>回答二：再者，菩薩常常想要親近見佛，心中沒有厭足的時候；即使沒有特別因緣，尚且想要見佛，何況這次有這樣重大的因緣呢！</td><td class="bh9p13-guan"><b>法爾如是的渴仰——情之自然</b>——菩薩見佛心無厭足，是修行者法爾如是的自然渴仰。此答顯示發問之動機不僅出於理智的因緣推求，更源於菩薩對佛永不止息的仰慕之心。</td></tr><tr><td class="bh9p13-src">答三：復次，是事不應疑。譬如犢子隨母，未足怪也！又如小王朝宗大王，法應爾故。諸大菩薩亦如是，得利大故常欲隨佛。是菩薩見是事，心即覺知是必大事，見無數無量世界皆得相見，以是故問。</td><td>回答三：再者，這件事不必懷疑。就好比小牛跟隨母牛，不值得奇怪；又好比小國之王朝見大國之王，依禮法本當如此。諸大菩薩也是這樣，因為從佛所得利益廣大，所以常常想要跟隨佛。這位普明菩薩見到這樣的瑞相，心中立刻覺知這必定是重大之事，又見到無數無量的世界都能彼此相見，因此便向佛請問。</td><td class="bh9p13-guan"><b>法爾如是的渴仰（續）——犢子隨母·小王朝宗喻</b>——犢子隨母是情之自然，小王朝宗大王是理之自然，情理二喻並舉，說明菩薩常欲隨佛乃「得利大故」，是俗諦因果情理上完全合理之事，非有可疑之處。</td></tr><tr><td class="bh9p13-src">答四：復次，有人言：是菩薩自有神力能知，亦是釋迦牟尼佛力令知；但為諸小菩薩不知故問佛。諸小菩薩怖難未除，不能問佛，是故為之發問。是普明菩薩發其世界，與諸小男子、小女人俱，以是故知不能問佛。譬如大象能劈大樹，令諸小象得食枝葉。</td><td>回答四：再者，有人說：這位普明菩薩自身本有神通能力可以知曉，這也是釋迦牟尼佛威神力使他知曉；只是因為其他小菩薩們不知道，所以才代為問佛。那些小菩薩怖畏艱難尚未除盡，不敢向佛發問，因此普明菩薩便代替他們發問。這位普明菩薩從他的世界出發，是與許多善男子、善女人一同前來的，由此可知那些人自己是不能向佛發問的。就好比大象能劈開大樹，使得那些小象也能得到樹上的枝葉可食。</td><td class="bh9p13-guan"><b>利他方便示現——大象劈樹喻</b>——普明菩薩自有神力能知，卻仍代諸小菩薩發問，正是強者主動降階、與弱者同理示現之慈悲代言。「大象能劈大樹令諸小象得食枝葉」一喻，說明真正的覺知不僅衡量自身之知，更覺察他人之不知與恐懼，是謙卑向上（承接佛智）、慈悲向下（庇護群蒙）的雙重示現。</td></tr><tr><td class="bh9p13-src">答五：是故問佛：「大德！何因何緣有此大光明、地大震動，又見佛身？」</td><td>回答五：因此普明菩薩便向佛請問：「大德世尊！是什麼因、什麼緣，而有這樣的大光明、大地震動，又能見到佛身呢？」</td><td class="bh9p13-guan"><b>知而故問如幻性——理事圓融</b>——五重答辯層層剝顯，終歸於重提本問。普明菩薩之「知而故問」，能問者是如幻的普明（示現不知而非真不知）、所為者是如幻的小菩薩（怖難未除是真不知）、動作是如幻的發問（劈樹利他）。真諦空（相待無自性）不否定俗諦有（緣起大悲行），空不礙有、有不離空，正是菩薩道之中道，亦是龍樹菩薩問答之間的最上乘心法。</td></tr></tbody></table><p class="bh9p13-note">卷九第13品「普明菩薩問光明因緣」：普明菩薩親見大光、地動、佛身三相，返寶積佛所請問因緣；論主自設一問，以五重答辯（月光日出喻、犢子隨母喻、小王朝宗喻、大象劈樹喻）層層開顯「最尊第一何以問佛」之詮釋學悖論。原文白話中觀三欄對照，含一問五答（經在最頂）。　中觀關鍵詞：相待無自性 智慧相對界限 法爾如是的渴仰 利他方便示現 知而故問如幻性</p></div></div>
+<script id="wy-bh9p13-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh9p13Btn"),BOX=document.getElementById("bh9p13Box"),MODAL=document.getElementById("bh9p13Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=12;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c9p13Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh9p13Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH9P13:END-->
 </body></html>
