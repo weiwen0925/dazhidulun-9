@@ -2149,4 +2149,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH9P6:END-->
+<!--WY-BH9P7:BEGIN-->
+<style id="wy-bh9p7-css">
+.bh9p7-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh9p7-fabbox.show{display:block;}
+.bh9p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh9p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh9p7-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh9p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh9p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh9p7-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh9p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh9p7-modal.open{display:flex;}
+.bh9p7-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh9p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh9p7-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh9p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh9p7-close:hover{background:#dde2e6;}
+.bh9p7-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh9p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh9p7-tbl th,.bh9p7-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh9p7-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh9p7-tbl thead th:nth-child(1){width:32%;}.bh9p7-tbl thead th:nth-child(2){width:41%;}.bh9p7-tbl thead th:nth-child(3){width:27%;}
+.bh9p7-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh9p7-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh9p7-guan{background:#eef2f5;color:#37505f;}
+.bh9p7-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh9p7-tbl tbody tr:nth-child(even) td.bh9p7-guan{background:#e8eef2;}
+.bh9p7-tbl tbody tr:nth-child(even) td.bh9p7-qa{background:#e7ecdb;}
+.bh9p7-tbl b{color:#8b2500;}
+.bh9p7-guan b{color:#2f6b5a;}
+.bh9p7-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh9p7-note b{color:#8b2500;}
+@media(max-width:900px){.bh9p7-fabbox{right:14px;}.bh9p7-tbl{font-size:11px;}.bh9p7-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh9p7-fabbox" id="bh9p7Box"><button class="bh9p7-btn" id="bh9p7Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh9p7-ic">譯</span><span class="bh9p7-ls"><span class="bh9p7-l1">本品 · 原文·白話·中觀</span><span class="bh9p7-l2">白話翻譯表</span></span></button></div><div class="bh9p7-modal" id="bh9p7Modal" role="dialog" aria-modal="true"><div class="bh9p7-card"><button class="bh9p7-close" id="bh9p7Close" type="button" aria-label="關閉">×</button><h3>卷九 · 第7品 白話翻譯表（普現色身）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷九・第7品・普現色身</p><table class="bh9p7-tbl"><caption>普現色身 · 原文｜白話翻譯｜中觀概念（共4段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh9p7-src">爾時，三千大千世界及十方眾生各各自念：佛獨為我說法，不為餘人。</td><td>那時，三千大千世界以及十方世界的一切眾生，各自心中都這樣想：佛陀是單獨為我一人說法，並不是為了其他人。</td><td class="bh9p7-guan"><b>經文標宗——專屬感的宇宙奇觀</b>——經文以「各各自念」四字，直接呈現一個看似神異的主觀體驗：全宇宙無量眾生同時聞法，每一個個體卻都真實感受到佛陀唯獨為己說法。此段經文並非渲染神通，而是為下文論主「一身云何各各見前」的叩問，預先埋下一個必須被正視的現象事實。</td></tr><tr><td class="bh9p7-qa">問曰：佛以一身示三千大千世界及十方，今諸眾生何以各各見佛在前說法？</td><td>有人問：佛只以一個身相，示現在三千大千世界乃至十方世界之中，那麼現在一切眾生，為什麼卻都各自看見佛就在自己面前說法呢？</td><td class="bh9p7-guan"><b>設問——一與多的本體張力</b>——此問直指「一身」與「各各見前」之間的邏輯矛盾：若佛身只有一個，如何能同時、無限地顯現在每一位眾生眼前？論主不以神通略過此問，而是將其確立為全品必須解決的核心張力，是後文「二種神力」與「非一非異」論證的出發點。</td></tr><tr><td class="bh9p7-qa">答曰：佛有二種神力——一者、一處坐說法，令諸眾生遠處皆見、遠處皆聞；二者、佛在一處說法，能令一一眾生各自見佛在前說法。譬如日出，影現眾水。</td><td>回答說：佛具有兩種神通力——第一種，是佛在一個地方安坐說法，卻能使一切眾生無論身在多遠，都能看得見、聽得到；第二種，是佛雖然只在一個地方說法，卻能讓每一位眾生各自看見佛就在自己面前為他說法。就好比太陽升起的時候，它的光影能同時映現在大地上無數的水面之中。</td><td class="bh9p7-guan"><b>二力並運——廣播與客製化的中道圓融</b>——論主以「二種神力」精確拆解「一身多現」的機制：第一力解決空間可達性（遠處皆見皆聞），第二力解決心理親和性（各自見佛在前），並以「日出影現眾水」為喻，將不可思議的示現，安立為人人可親驗的自然現象。此喻正是後文「非一非異」中道正觀的伏筆——太陽唯一，倒影無量，一多並不相礙。</td></tr><tr><td class="bh9p7-src">復次，眾生不同：有人見佛身遍三千大千世界而得淨信，有人各各見佛在前說法，得心清淨，信樂歡喜。以是故，佛今各各在前而為說法。</td><td>此外，眾生的根器各不相同：有人看見佛身遍滿三千大千世界，因而生起清淨的信心；也有人各自看見佛就在自己面前說法，因而內心清淨，生起歡喜信樂之心。正因如此，佛才示現在每一位眾生面前為他們說法。</td><td class="bh9p7-guan"><b>應機示現——隨根設教即是中道</b>——此段經文補充說明二種神力並非重複，而是分別對應「好大者」與「好親者」兩類根器：前者由宏觀示現得淨信，後者由專屬示現得歡喜信樂。佛之示現無有定法，隨眾生根性差別而異其相，正是中觀「不著一異、隨緣應化」精神在教化次第上的具體落實。</td></tr></tbody></table><p class="bh9p7-note">卷九第7品「普現色身」：經文先呈現「各各自念佛獨為我說法」之專屬感奇觀，論主隨即以「佛以一身示三千大千世界及十方，今諸眾生何以各各見佛在前說法」為叩問，答以「佛有二種神力」——一令遠處皆見皆聞、二令各各見佛在前，並以「日出影現眾水」為喻；復引經文「眾生不同」說明二力分應「好大者」與「好親者」兩類根器。原文白話中觀三欄對照，經在最頂，設問次之，答語殿後。　中觀關鍵詞：二種神力 日出影現眾水 非一非異 隨根設教</p></div></div>
+<script id="wy-bh9p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh9p7Btn"),BOX=document.getElementById("bh9p7Box"),MODAL=document.getElementById("bh9p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c9p7Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh9p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH9P7:END-->
 </body></html>
