@@ -2047,4 +2047,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH9P4:END-->
+<!--WY-BH9P5:BEGIN-->
+<style id="wy-bh9p5-css">
+.bh9p5-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh9p5-fabbox.show{display:block;}
+.bh9p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh9p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh9p5-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh9p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh9p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh9p5-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh9p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh9p5-modal.open{display:flex;}
+.bh9p5-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh9p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh9p5-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh9p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh9p5-close:hover{background:#dde2e6;}
+.bh9p5-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh9p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh9p5-tbl th,.bh9p5-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh9p5-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh9p5-tbl thead th:nth-child(1){width:32%;}.bh9p5-tbl thead th:nth-child(2){width:41%;}.bh9p5-tbl thead th:nth-child(3){width:27%;}
+.bh9p5-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh9p5-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh9p5-guan{background:#eef2f5;color:#37505f;}
+.bh9p5-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh9p5-tbl tbody tr:nth-child(even) td.bh9p5-guan{background:#e8eef2;}
+.bh9p5-tbl tbody tr:nth-child(even) td.bh9p5-qa{background:#e7ecdb;}
+.bh9p5-tbl b{color:#8b2500;}
+.bh9p5-guan b{color:#2f6b5a;}
+.bh9p5-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh9p5-note b{color:#8b2500;}
+@media(max-width:900px){.bh9p5-fabbox{right:14px;}.bh9p5-tbl{font-size:11px;}.bh9p5-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh9p5-fabbox" id="bh9p5Box"><button class="bh9p5-btn" id="bh9p5Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh9p5-ic">譯</span><span class="bh9p5-ls"><span class="bh9p5-l1">本品 · 原文·白話·中觀</span><span class="bh9p5-l2">白話翻譯表</span></span></button></div><div class="bh9p5-modal" id="bh9p5Modal" role="dialog" aria-modal="true"><div class="bh9p5-card"><button class="bh9p5-close" id="bh9p5Close" type="button" aria-label="關閉">×</button><h3>卷九 · 第5品 白話翻譯表（神力現華化蓮臺）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷九・第五品・神力現華化蓮臺</p><table class="bh9p5-tbl"><caption>神力現華化蓮臺 · 原文｜白話翻譯｜中觀概念（共3段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh9p5-src">是華臺邊垂諸瓔珞，雜色華蓋，五色繽紛。是諸華蓋、瓔珞遍滿三千大千世界。</td><td>這座華臺的邊緣，垂掛著各種瓔珞裝飾，繽紛的花蓋色彩交錯、五彩繽紛。這些花蓋與瓔珞，遍滿整個三千大千世界。</td><td class="bh9p5-guan"><b>經文標宗——莊嚴果相遍滿法界</b>——本段承前品「散華化臺」，進一步鋪陳華臺瓔珞、花蓋遍滿三千大千世界的莊嚴果相，以外境的廣大無邊，鋪墊後文論主將鏡頭由「外相」收攝回「心相」的問答。</td></tr><tr><td class="bh9p5-qa">問曰：若佛自有神力，何以因所散華而變為臺？</td><td>有人問：如果佛陀自身本來就具足神通之力，為什麼還要藉由眾生所散的花朵，才變化出樓臺呢？</td><td class="bh9p5-guan"><b>設問——神力何須假借外緣</b>——此問直指一項看似多餘的安排：佛既有無量神力，理應能憑空示現，何必假借眾生所散之華作為變現的憑藉？此一「多此一舉」的疑惑，正逼出下文「藉境練心」的教育性意涵。</td></tr><tr><td class="bh9p5-qa">答曰：欲令人心信清淨故。是人見所供養變成此臺，心大歡喜，因歡喜故得大福德。</td><td>回答說：這是為了要使供養者的心生起清淨的信心。這人見到自己所供養的花朵變化成樓臺，心中生起極大的歡喜，正因為這份歡喜，而獲得廣大的福德。</td><td class="bh9p5-guan"><b>藉境練心——福德由心物和合緣起</b>——此答揭示「福德」並非佛單方施予的實有之物，而是「佛之神力（外緣）」與「眾生之信敬歡喜（內因）」和合而生的動態現象：外相之華臺是接引之方便，內心之淨信歡喜才是福德真正生起之處。此即《中論・觀方便品》「勝義雖空、世俗以方便而立」之理——藉假修真，指花為臺，令眾生於方便示現中，親證緣起無自性而福德不虛的中道。</td></tr></tbody></table><p class="bh9p5-note">卷九第5品「神力現華化蓮臺」：承前品化臺之後，經文續述華臺瓔珞莊嚴、遍滿三千大千世界之相，論主以一問一答，解答「佛自有神力何須假花變臺」之疑，揭示佛陀藉眾生所供之華為方便，令其生起淨信歡喜，因歡喜心而感得大福德，福德乃內因外緣和合而生、無自性可得。原文白話中觀三欄對照，經在最頂，一問一答隨後。　中觀關鍵詞：藉境練心 方便示現 心物和合緣起 福德無自性 二諦並立</p></div></div>
+<script id="wy-bh9p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh9p5Btn"),BOX=document.getElementById("bh9p5Box"),MODAL=document.getElementById("bh9p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c9p5Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh9p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH9P5:END-->
 </body></html>
