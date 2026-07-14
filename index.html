@@ -2200,4 +2200,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH9P7:END-->
+<!--WY-BH9P8:BEGIN-->
+<style id="wy-bh9p8-css">
+.bh9p8-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh9p8-fabbox.show{display:block;}
+.bh9p8-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh9p8-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh9p8-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh9p8-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh9p8-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh9p8-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh9p8-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh9p8-modal.open{display:flex;}
+.bh9p8-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh9p8-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh9p8-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh9p8-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh9p8-close:hover{background:#dde2e6;}
+.bh9p8-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh9p8-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh9p8-tbl th,.bh9p8-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh9p8-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh9p8-tbl thead th:nth-child(1){width:32%;}.bh9p8-tbl thead th:nth-child(2){width:41%;}.bh9p8-tbl thead th:nth-child(3){width:27%;}
+.bh9p8-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh9p8-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh9p8-guan{background:#eef2f5;color:#37505f;}
+.bh9p8-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh9p8-tbl tbody tr:nth-child(even) td.bh9p8-guan{background:#e8eef2;}
+.bh9p8-tbl tbody tr:nth-child(even) td.bh9p8-qa{background:#e7ecdb;}
+.bh9p8-tbl b{color:#8b2500;}
+.bh9p8-guan b{color:#2f6b5a;}
+.bh9p8-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh9p8-note b{color:#8b2500;}
+@media(max-width:900px){.bh9p8-fabbox{right:14px;}.bh9p8-tbl{font-size:11px;}.bh9p8-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh9p8-fabbox" id="bh9p8Box"><button class="bh9p8-btn" id="bh9p8Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh9p8-ic">譯</span><span class="bh9p8-ls"><span class="bh9p8-l1">本品 · 原文·白話·中觀</span><span class="bh9p8-l2">白話翻譯表</span></span></button></div><div class="bh9p8-modal" id="bh9p8Modal" role="dialog" aria-modal="true"><div class="bh9p8-card"><button class="bh9p8-close" id="bh9p8Close" type="button" aria-label="關閉">×</button><h3>卷九 · 第8品 白話翻譯表（佛光神力普照世界）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷九・第8品・佛光神力普照世界</p><table class="bh9p8-tbl"><caption>佛光神力普照世界 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh9p8-src">爾時，世尊在師子座熙怡而笑，光從口出，遍照三千大千世界。以此光故，此間三千大千世界中眾生皆見東方恒河沙諸佛及僧，彼間恒河沙等世界中眾生亦見此間三千大千世界中釋迦牟尼佛及諸大眾。南西北方、四維、上下亦復如是。</td><td>那時，世尊坐在師子座上，露出和悅的微笑，光明從口中發出，遍照三千大千世界。由於這道光明的緣故，這個三千大千世界中的眾生，都能看見東方恆河沙數那樣多的諸佛及僧眾；而那邊恆河沙數世界中的眾生，也同樣能看見這裡三千大千世界中的釋迦牟尼佛以及所有大眾。南方、西方、北方、四維（四個斜方）、上方、下方，也都是如此。</td><td class="bh9p8-guan"><b>經文標宗——雙向相見的宇宙奇觀</b>——經文以世尊「熙怡而笑、光從口出」揭開全品序幕：一道光明，令原本互不相見的娑婆與十方恆沙世界大會，同時、雙向、十方俱遍地彼此相見。此段經文正是全品「破空間、破能力、破主客」三重辯證的文本根源，論主隨後即以三回合問答逐層剖析此一現象。</td></tr><tr><td class="bh9p8-qa">問曰：佛上已多放光明，今以何故復放斯光？</td><td>有人問：佛陀先前已經多次放出光明了，這次為什麼又要再放這道光呢？</td><td class="bh9p8-guan"><b>設問——動機之謎</b>——此問追究「復放斯光」是否多此一舉，實則直指本品第一重辯證的核心：這道光與此前諸光在功能上有何本質區別？</td></tr><tr><td class="bh9p8-qa">答曰：先放光明，各各有事，如先說。今以彼此眾會兩未相見故，以光明神力，令彼此世界一切大會兩得相見。</td><td>回答說：先前所放的光明，各自都有其特定的用意，如同前面所說的那樣。而這次放光，則是因為娑婆世界與十方世界的大眾彼此都還沒有見過對方，所以佛以光明的神通之力，使兩邊世界所有的大眾都能夠彼此相見。</td><td class="bh9p8-guan"><b>破斥動機之謎——通訊之光異於表法之光</b>——論主一語點破：此光非為重複表法，而是專為打破「兩未相見」的隔絕而放，功能屬「通訊」而非「宣告」。此答揭示：所謂空間之「遠」，本無固定自性，佛光作為助緣一旦介入，天涯隔閡即可當下消融，此即後文「觀空間遠近本空」的中觀根據。</td></tr><tr><td class="bh9p8-qa">問曰：如弟子中天眼第一大阿羅漢長老阿泥盧豆，暫觀見小千世界，諦觀見二千世界；大辟支佛暫觀見二千世界，諦觀見三千大千世界。今一切人云何能見東方恒河沙等諸佛世界？</td><td>有人問：像佛弟子當中天眼第一的大阿羅漢長老阿那律，若只是稍微觀看，能見到小千世界；若仔細諦觀，能見到二千世界；大辟支佛若稍微觀看，能見到二千世界；仔細諦觀，能見到三千大千世界。那麼現在一切凡夫，又怎麼能夠看見東方恆河沙數那樣多的諸佛世界呢？</td><td class="bh9p8-guan"><b>設問——能力與階位的極限悖論</b>——此問以修證階位由低至高層層舉例：阿羅漢、辟支佛的天眼尚且各有其上限，凡夫理應更為侷限，卻反而能見遠超前二者的恆沙世界，直接違反「修證越高、能力越強」的常規修道邏輯。</td></tr><tr><td class="bh9p8-qa">答曰：是佛神力令彼得見，非眾生力也。設阿羅漢及辟支佛等亦以佛力故所見無限。譬如轉輪聖王飛行，一切營從及諸象馬眾畜皆亦隨去。今佛神力故，眾生雖在遠處亦得相見。又如般舟三昧力故，雖不得天眼而見十方佛，眼耳無礙。亦如劫盡燒時，一切眾生自然皆得禪定，得天眼、天耳。佛以神力故，令一切眾生皆得遠見亦復如是。「爾時，世尊在師子座而笑」，「笑」如先說，餘未說者今當說。</td><td>回答說：這是佛的神通力使他們能夠看見，並不是眾生自身的能力。即使是阿羅漢和辟支佛，也是憑藉佛力的緣故，所見才能沒有限量。就好比轉輪聖王飛行於空中時，一切隨從的眷屬以及大象、馬匹等各種牲畜，也都能一同飛行跟隨。如今正是因為佛的神通力，眾生雖然身處遙遠之處，也能夠彼此相見。又好比憑藉般舟三昧的定力，雖然沒有證得天眼，卻能見到十方諸佛，眼根耳根都毫無障礙。也好比劫末大火燒盡世界的時候，一切眾生自然而然都獲得禪定，證得天眼、天耳。佛正是憑藉神通力，使一切眾生都能遠見，道理也是如此。至於「那時，世尊在師子座上微笑」這一句，「笑」的意義前面已經說過，其餘還沒有解說的，現在應當繼續說明。</td><td class="bh9p8-guan"><b>破斥能力悖論——他力置換自力的極限天花板</b>——論主一語破題「是佛神力令彼得見，非眾生力也」，指出能力的高下並非取決於修證階位，而在於「接上了誰」；復舉轉輪聖王飛行、般舟三昧、劫盡自然禪定三喻，證明能力本無固定自性，佛力作為增上緣一旦介入，凡夫的果報系統即可被徹底改寫，此即中觀「能力緣起無自性」之義。</td></tr><tr><td class="bh9p8-qa">問曰：此間眾生遠見彼方是佛神力，彼間眾生亦見此方是誰力耶？</td><td>有人問：這裡的眾生能夠遠遠看見那一方世界，是佛的神通力；那麼那一方世界的眾生，也能看見這裡，這又是誰的力量呢？</td><td class="bh9p8-guan"><b>設問——雙向視覺的歸屬權之謎</b>——此問將視角反轉：既然此方眾生遠見彼方是釋迦佛力所致，那麼彼方眾生反過來看見此方，其神力的歸屬又當如何安立？此問直指「主客」是否應各有其力源的疑惑。</td></tr><tr><td class="bh9p8-qa">答曰：是釋迦牟尼佛力，令彼得見此間三千大千世界，及見釋迦牟尼佛并一切眾會；南西北方、四維、上下亦復如是。</td><td>回答說：這同樣是釋迦牟尼佛的神通力，使那一方的眾生能夠看見這裡的三千大千世界，以及看見釋迦牟尼佛和所有的法會大眾；南方、西方、北方、四維、上方、下方，也都是同樣的道理。</td><td class="bh9p8-guan"><b>破斥歸屬之謎——一光雙照·主客不二</b>——論主明確指出：雙向相見同出一源，皆是釋迦牟尼佛一光之力，並非此方、彼方各具其力。此答收束全品三重辯證：空間本空、能力無自性、主客亦不二立，一切皆攝歸於佛之一光，圓滿印證「非一非異」的中道正觀，並非各自獨立的兩種神力互不相干。</td></tr></tbody></table><p class="bh9p8-note">卷九第8品「佛光神力普照世界」：經文先呈現世尊「熙怡而笑、光從口出」使娑婆與十方恆沙世界大會兩得相見之奇觀，論主隨即以三回合問答層層剖析——第一問破「動機」（何故復放斯光），第二問破「能力」（一切人云何見恆沙），第三問破「歸屬」（彼見此方是誰力），一一答以：光為通訊而非表法、能力乃佛力而非自力、雙向相見同出釋迦一光。原文白話中觀三欄對照，經在最頂，三組問答依次排列，問在答前。　中觀關鍵詞：兩得相見 佛神力非眾生力 一光雙照 非一非異</p></div></div>
+<script id="wy-bh9p8-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh9p8Btn"),BOX=document.getElementById("bh9p8Box"),MODAL=document.getElementById("bh9p8Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=7;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c9p8Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh9p8Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH9P8:END-->
 </body></html>
