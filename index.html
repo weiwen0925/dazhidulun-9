@@ -1945,4 +1945,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH9P2:END-->
+<!--WY-BH9P3:BEGIN-->
+<style id="wy-bh9p3-css">
+.bh9p3-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh9p3-fabbox.show{display:block;}
+.bh9p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh9p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh9p3-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh9p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh9p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh9p3-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh9p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh9p3-modal.open{display:flex;}
+.bh9p3-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh9p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh9p3-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh9p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh9p3-close:hover{background:#dde2e6;}
+.bh9p3-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh9p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh9p3-tbl th,.bh9p3-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh9p3-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh9p3-tbl thead th:nth-child(1){width:32%;}.bh9p3-tbl thead th:nth-child(2){width:41%;}.bh9p3-tbl thead th:nth-child(3){width:27%;}
+.bh9p3-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh9p3-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh9p3-guan{background:#eef2f5;color:#37505f;}
+.bh9p3-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh9p3-tbl tbody tr:nth-child(even) td.bh9p3-guan{background:#e8eef2;}
+.bh9p3-tbl tbody tr:nth-child(even) td.bh9p3-qa{background:#e7ecdb;}
+.bh9p3-tbl b{color:#8b2500;}
+.bh9p3-guan b{color:#2f6b5a;}
+.bh9p3-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh9p3-note b{color:#8b2500;}
+@media(max-width:900px){.bh9p3-fabbox{right:14px;}.bh9p3-tbl{font-size:11px;}.bh9p3-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh9p3-fabbox" id="bh9p3Box"><button class="bh9p3-btn" id="bh9p3Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh9p3-ic">譯</span><span class="bh9p3-ls"><span class="bh9p3-l1">本品 · 原文·白話·中觀</span><span class="bh9p3-l2">白話翻譯表</span></span></button></div><div class="bh9p3-modal" id="bh9p3Modal" role="dialog" aria-modal="true"><div class="bh9p3-card"><button class="bh9p3-close" id="bh9p3Close" type="button" aria-label="關閉">×</button><h3>卷九 · 第3品 白話翻譯表（散華供養）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷九・第三品・散華供養</p><table class="bh9p3-tbl"><caption>散華供養 · 原文｜白話翻譯｜中觀概念（共3段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh9p3-src">是諸天華乃至天樹葉香以散佛上。</td><td>這些天華乃至天樹葉香，都散在佛的身上以作供養。</td><td class="bh9p3-guan"><b>經文標宗——散華之相</b>——本段承前品諸天持華而來，收於「以華散佛上」的具體供養行為，作為本品所釋的現象。散華一事看似平常，論主卻要由此叩問「為何以華散佛」，顯示凡供養之相皆有其緣起之義，非徒事儀式。</td></tr><tr><td class="bh9p3-qa">問曰：何以以華散佛身上？</td><td>有人問：為什麼要把華散在佛的身上呢？</td><td class="bh9p3-guan"><b>設問——供養行為的意義</b>——此問追究「散華」這一供養行為背後的用意，引出恭敬、歡喜、福田三重解答。中觀不廢俗諦事相，而要於事相中見其緣起之理與修行之用。</td></tr><tr><td class="bh9p3-qa">答曰：恭敬供養故。又佛光照，皆遙見佛，心大歡喜，供養佛故，皆以諸華而散佛上。復次，佛於三界第一福田，以是故華散佛上。</td><td>回答說：是為了恭敬供養的緣故。再者，因佛光普照，眾生都能遠遠望見佛，心中非常歡喜，為了供養佛，便都拿著種種華散在佛身上。再者，佛是三界中第一等的福田，於佛所種福最為殊勝，所以把華散在佛身上以種福德。</td><td class="bh9p3-guan"><b>三義釋供·福田緣起</b>——答文以「恭敬、歡喜、第一福田」三義解釋散華：前二為能供者的心行，後一為所供境的殊勝。「佛為三界第一福田」點出供養果報之大小繫於福田之勝劣（緣起），而非華之多寡；散華供佛之所以得大福，正因所對是無上福田——供養一事的功德依「能供心、所供境、施物」三緣和合而立，無一有自性，卻宛然成就福德，恰是緣起性空、因果不虛的中道體現。</td></tr></tbody></table><p class="bh9p3-note">卷九第3品「散華供養」：諸天華乃至天樹葉香散於佛上；論主以「恭敬、歡喜、第一福田」三義釋「何以以華散佛身上」。原文白話中觀三欄對照，含一問一答（經在最頂）。　中觀關鍵詞：供養緣起 福田勝劣定果 能供所供施物三緣和合 因果不虛而無自性</p></div></div>
+<script id="wy-bh9p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh9p3Btn"),BOX=document.getElementById("bh9p3Box"),MODAL=document.getElementById("bh9p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c9p3Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh9p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH9P3:END-->
 </body></html>
