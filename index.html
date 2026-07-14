@@ -1843,4 +1843,55 @@ if(toc&&"IntersectionObserver" in window){
 }else{var ref=function(){var t=toc?toc.getBoundingClientRect().bottom:600;show(t>60);};window.addEventListener("scroll",ref,{passive:true});ref();}
 })();</script>
 <!--WY-BHALL9:END-->
+<!--WY-BH9P1:BEGIN-->
+<style id="wy-bh9p1-css">
+.bh9p1-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh9p1-fabbox.show{display:block;}
+.bh9p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh9p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh9p1-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh9p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh9p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh9p1-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh9p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh9p1-modal.open{display:flex;}
+.bh9p1-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh9p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh9p1-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh9p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh9p1-close:hover{background:#dde2e6;}
+.bh9p1-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh9p1-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh9p1-tbl th,.bh9p1-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh9p1-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh9p1-tbl thead th:nth-child(1){width:32%;}.bh9p1-tbl thead th:nth-child(2){width:41%;}.bh9p1-tbl thead th:nth-child(3){width:27%;}
+.bh9p1-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh9p1-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh9p1-guan{background:#eef2f5;color:#37505f;}
+.bh9p1-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh9p1-tbl tbody tr:nth-child(even) td.bh9p1-guan{background:#e8eef2;}
+.bh9p1-tbl tbody tr:nth-child(even) td.bh9p1-qa{background:#e7ecdb;}
+.bh9p1-tbl b{color:#8b2500;}
+.bh9p1-guan b{color:#2f6b5a;}
+.bh9p1-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh9p1-note b{color:#8b2500;}
+@media(max-width:900px){.bh9p1-fabbox{right:14px;}.bh9p1-tbl{font-size:11px;}.bh9p1-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh9p1-fabbox" id="bh9p1Box"><button class="bh9p1-btn" id="bh9p1Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh9p1-ic">譯</span><span class="bh9p1-ls"><span class="bh9p1-l1">本品 · 原文·白話·中觀</span><span class="bh9p1-l2">白話翻譯表</span></span></button></div><div class="bh9p1-modal" id="bh9p1Modal" role="dialog" aria-modal="true"><div class="bh9p1-card"><button class="bh9p1-close" id="bh9p1Close" type="button" aria-label="關閉">×</button><h3>卷九 · 第1品 白話翻譯表（初品放光釋論之餘）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷九・第一品・初品放光釋論之餘</p><table class="bh9p1-tbl"><caption>初品放光釋論之餘 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh9p1-src">爾時，世尊在師子座上坐，於三千大千世界中，其德特尊，光明色像威德巍巍，遍至十方如恒河沙等諸佛世界。譬如須彌山王光色殊特，眾山無能及者。</td><td>那時，世尊安坐在師子座上，在這三千大千世界之中，祂的德行特別尊貴，身相的光明與威德巍然崇高，普遍照達十方如恆河沙那樣多的諸佛世界。就好比須彌山王的光彩殊勝獨特，其他一切山都無法與它相比。</td><td class="bh9p1-guan"><b>經文標宗——特尊之相待緣而顯</b>——本段以「其德特尊、威德巍巍」立起全品所釋的現象，並以「須彌山王喻」點出「特尊」是相待而立的假名：山之高唯對眾山而顯，佛之尊唯對眾生而顯，並非有一自性獨存的「尊」。這正埋下後文問答的中觀伏筆——特尊之相是無量功德因緣所成（緣起），非佛自體本具一個實有的「尊性」。</td></tr><tr><td class="bh9p1-qa">問曰：佛以何力故於一切眾生中其德特尊，光明、威德巍巍乃如是耶？如轉輪聖王、諸天、聖人亦有大力、光明、威德，何以獨言佛德特尊？</td><td>有人問：佛憑什麼力量，能在一切眾生之中德行特別尊貴、光明與威德如此巍峨？像轉輪聖王、諸天、聖人也都具有大力、光明與威德，為什麼偏偏只說佛的德行最為特尊呢？</td><td class="bh9p1-guan"><b>設難——特尊是否可與凡聖並列</b>——此問把佛的「特尊」與轉輪王、諸天的威德並置，逼問二者差別何在。思辨要害在於：若威德只是量的多寡，佛與聖王只是程度之別；論主須揭示佛之特尊來自「因緣體量」的根本不同，而非同類相比的高低。</td></tr><tr><td class="bh9p1-qa">答曰：此諸賢聖雖有光明、威德，有量有限。譬如眾星，日光既出，則沒不現。佛從無量阿僧祇劫集大功德，一切具足，因緣大故果報亦大；餘人無此。復次，佛世世修諸苦行，無量無數頭、目、髓、腦常施眾生，豈唯國、財、妻、子而已！一切種種戒、種種忍、種種精進、種種禪定，及無比清淨不可壞不可盡智慧，世世修行，已具足滿。此果力故，得不可稱量殊特威神，以是故言「因緣大故果報亦大」。</td><td>回答說：這些賢者聖人雖然也有光明與威德，卻是有限量的。就好比天上眾星，太陽一出來，它們的光就隱沒不現了。佛歷經無量阿僧祇劫積聚廣大功德，一切圓滿具足，因為所修的因緣廣大，所以感得的果報也廣大，其他人沒有這樣的因緣。再者，佛世世修種種苦行，無數次把頭、眼、骨髓、腦漿常施給眾生，豈只是布施國土、財物、妻子而已！種種持戒、忍辱、精進、禪定，以及無可比擬、清淨不壞不盡的智慧，世世修習，早已圓滿具足。憑這果報之力，才得到不可稱量的殊勝威神，所以說「因緣廣大，果報也就廣大」。</td><td class="bh9p1-guan"><b>破齊觀——量有限與功德緣起</b>——答文以「眾星對日光」點破凡聖威德「有量有限」，而佛之威德源於無量劫功德因緣的積累。這正是緣起義的正面運用：果報之大小全繫於因緣之大小（「因緣大故果報亦大」），非有一自性之尊自然而有。頭目髓腦之施顯示「特尊」是徹底無我布施所成，恰與「有自性可執的尊」相反。</td></tr><tr><td class="bh9p1-qa">問曰：若佛神力無量，威德巍巍，不可稱說，何以故受九罪報？一者、梵志女孫陀利謗，五百阿羅漢亦被謗；二者、旃遮婆羅門女繫木盂作腹謗佛；三者、提婆達推山壓佛，傷足大指；四者、迸木刺腳；五者、毘樓璃王興兵殺諸釋子，佛時頭痛；六者、受阿耆達多婆羅門請而食馬麥；七者、冷風動故脊痛；八者、六年苦行；九者、入婆羅門聚落，乞食不得，空鉢而還。復有冬至前後八夜，寒風破竹，索三衣禦寒。又復患熱，阿難在後扇佛。如是等世界小事，佛皆受之。若佛神力無量，三千大千世界乃至東方恒河沙等諸佛世界，南西北方、四維、上下，光明色像威德巍巍，何以故受諸罪報？</td><td>有人問：如果佛的神力無量、威德巍峨、不可言說，為什麼還要承受九種罪報？一是被梵志女孫陀利毀謗，五百阿羅漢也一同被謗；二是旃遮婆羅門女把木盆繫在腹前假裝懷孕來謗佛；三是提婆達多推下大山壓佛，傷了佛的腳大拇指；四是被迸飛的木片刺傷了腳；五是毘樓璃王興兵殺害眾釋迦族人，當時佛也頭痛；六是接受阿耆達多婆羅門的邀請卻只得吃馬麥；七是因冷風發作而背痛；八是六年的苦行；九是進入婆羅門聚落乞食卻一無所得、空著鉢回來。還有冬至前後八夜，寒風凜冽如破竹，佛得討取三衣禦寒；又曾患熱，阿難在身後為佛搧扇。像這類世間小事，佛都一一承受了。如果佛的神力無量，遍及三千大千世界乃至東方恆河沙數諸佛世界、南西北方、四維上下，光明色相、威德巍峨，為什麼還要承受這些罪報呢？</td><td class="bh9p1-guan"><b>設難——無量神力與受苦的矛盾</b>——此問把「神力無量」與「實受九罪」對舉，構成表面的邏輯矛盾，逼出佛身「二諦」的關鍵抉擇。若執佛身為一實有自性之體，則神力與受苦不能並存；此難正是要引出「生身／法性身」與「方便示現」的中道解答。</td></tr><tr><td class="bh9p1-qa">答曰：佛在人中生，人父母，受人身力，一指節力勝千萬億那由他白象力，神通力無量無數、不可思議。是淨飯王子，厭老、病、死苦，出家得佛道——是人豈受罪報，為寒熱等所困！如佛神力不可思議，不可思議法中，何有寒熱諸患？復次，佛有二種身：一者法性身，二者父母生身。是法性身滿十方虛空，無量無邊，色像端正，相好莊嚴，無量光明，無量音聲，聽法眾亦滿虛空（此眾亦是法性身，非生死人所得見也）；常出種種身、種種名號、種種生處、種種方便度眾生，常度一切，無須臾息時。如是法性身佛，能度十方世界眾生。受諸罪報者是生身佛，生身佛次第說法如人法。以有二種佛故，受諸罪無咎。復次，佛即得道時，一切不善法盡斷，一切善法皆成就，云何今實有不善法報可受？但憐愍未來世眾生故，現方便受此諸罪。復次，佛世世割肉、出髓以施眾生，云何乞食不得空鉢而還？以是事故，知佛方便為度眾生故受此諸罪：五眾佛弟子若施福薄，乞自活之具不能得，諸白衣言：「汝衣食不能得，有病不能除，何能得道以益於人？」是五眾當答：「我等雖無活身小事，有行道福德。今日眾苦是先身罪報，今之功德利在將來。我等大師佛入聚落乞食尚不得空鉢而還，佛亦有諸病、頭痛，何況我等薄福下人！」諸白衣聞已瞋心則息，便以四事供養比丘，身得安隱、坐禪得道。是為方便故，非實受罪。</td><td>回答說：佛是在人間出生的，有人間的父母，承受人的身體之力（一個指節的力量就勝過千萬億那由他頭白象），神通力更是無量無數、不可思議。這位淨飯王之子，因厭離老、病、死的痛苦而出家證得佛道——這樣的人怎會真的受罪報、被寒熱等所困呢！佛的神力既不可思議，在不可思議的境界中，哪裡會有寒熱等病患？再者，佛有兩種身：一是法性身，二是父母所生身。法性身遍滿十方虛空，無量無邊，色相端正、相好莊嚴、光明無量、音聲無量，聽法的大眾也充滿虛空（這些大眾也是法性身，不是生死凡夫所能見到的）；法性身常化現種種身形、種種名號、種種出生處、種種方便來度眾生，恆常度化一切，沒有片刻停歇。這樣的法性身佛，能度化十方世界的眾生。而承受種種罪報的，是父母所生的生身佛；生身佛依循人間之法次第說法。因為有這兩種佛身，所以承受諸罪並無過失。再者，佛在成道之時，一切不善法都已斷盡、一切善法都已成就，如今怎會真有不善的罪報可受？只是為了憐愍未來世的眾生，才示現方便承受這些罪。再者，佛世世割肉、出髓布施眾生，怎會真的乞食不得、空鉢而還？由此可知，這是佛為度眾生而方便示現受罪：佛弟子若施福淺薄、乞求維生之物而不能得，在家人便會質疑：「你連衣食都求不到、有病也治不好，怎能得道利益別人？」佛弟子便可回答：「我們雖無這些維生小事，卻有修道的福德。今日所受的苦是宿世罪報，如今所修的功德利益在將來。連我們的大師佛進聚落乞食尚且空鉢而還、也曾有諸病頭痛，何況我們這些薄福的下劣之人！」在家人聽了，瞋心便平息，於是以四事供養比丘，讓他們身心安穩、坐禪得道。這都是為了方便度眾，並非真的受罪。</td><td class="bh9p1-guan"><b>中道解難——二身開合·方便示現</b>——答文以「法性身／生身」二身之分，化解神力無量與實受苦報的矛盾：法性身遍虛空、不可思議，此為真諦邊；生身隨順人法而現受罪，此為俗諦邊——二身不一不異，正是二諦圓融。更進一步以「成道時不善已盡，示現受罪唯為憐愍未來眾生」，點明受苦是「悲心方便」的假名施設，非有實罪可受，徹底破除「佛實受苦」的自性執。</td></tr><tr><td class="bh9p1-src">如《毘摩羅詰經》中說：佛在毘耶離國，是時佛語阿難：「我身中熱風氣發，當用牛乳。汝持我鉢乞牛乳來。」阿難持佛鉢，晨朝入毘耶離，至一居士門立。是時，毘摩羅詰在是中行，見阿難持鉢而立，問阿難：「汝何以晨朝持鉢立此？」〔阿難〕答言：「佛身小疾，當用牛乳，故我到此。」〔毘摩羅詰〕言：「止！止！阿難！勿謗如來！佛為世尊，已過一切諸不善法，當有何疾？勿使外道聞此麁語，彼當輕佛，便言：佛自疾不能救，安能救人？」〔阿難〕言：「此非我意，面受佛勅當須牛乳。」〔毘摩羅詰〕言：「此雖佛勅，是為方便，以今五惡之世故，以是像度脫一切。若未來世，有諸病比丘當從白衣求諸湯藥。白衣言：『汝自疾不能救，安能救餘人？』諸比丘言：『我等大師猶尚有病，況我等身如艸芥能不病耶？』以是事故諸白衣等以諸湯藥供給比丘，使得安隱，坐禪行道。有外道、仙人能以藥艸、呪術除他人病，何況如來一切智德，自身有病而不能除？汝且默然，持鉢取乳，勿令餘人異學得聞知也。」</td><td>就像《維摩詰經》中所說：佛在毘耶離國時，對阿難說：「我身中熱風之氣發作，該用牛乳，你拿我的鉢去乞牛乳來。」阿難拿著佛的鉢，清晨進入毘耶離城，站在一位居士門前。當時維摩詰正走過那裡，看見阿難持鉢而立，便問阿難：「你為何清晨持鉢站在這裡？」阿難答說：「佛身有點小病，該用牛乳，所以我到這裡來。」維摩詰說：「別這麼說，別這麼說，阿難！不要毀謗如來！佛是世尊，已超越一切不善之法，哪會有病？別讓外道聽到這種粗率的話，他們會輕視佛，說：佛連自己的病都不能救，怎能救別人？」阿難說：「這不是我的意思，是當面領受佛的吩咐才須取牛乳的。」維摩詰說：「這雖是佛的吩咐，卻是方便，因為如今是五惡之世的緣故，佛以這種示現來度脫一切眾生。倘若未來世有生病的比丘要向在家人求取湯藥，在家人若說：『你連自己的病都救不了，怎能救別人？』比丘便可說：『我們的大師尚且有病，何況我們這如草芥般的身體豈能不病？』因這緣故，在家人便會以湯藥供給比丘，使他們安穩地坐禪行道。外道、仙人尚且能用藥草、咒術除去他人的病，何況如來具足一切智德，難道自身有病卻不能除嗎？你姑且默然，持鉢取乳，別讓其他外道異學聽到知道了。」</td><td class="bh9p1-guan"><b>引證——示疾即方便·破佛實病執</b>——引《維摩詰經》維摩詰呵斥阿難一節，正面確立「佛示疾」是隨五濁之世的方便善巧，而非佛真有病。維摩詰「佛已過一切不善法，當有何疾」一語，直指佛身於勝義中本無病相；而「使白衣供藥、比丘安隱行道」則顯示這場示疾在俗諦層面成就利生之用——示病之相是「無病而現病」的假名，緣生而無自性。</td></tr><tr><td class="bh9p1-src">以是故知佛為方便，非實病也。諸罪因緣皆亦如是。以是故言「佛其德特尊，光明色像，威德巍巍」。</td><td>因此可知佛示現生病只是方便，並非真的有病。其餘種種罪報的因緣，也都是這樣（皆為方便示現）。正因如此，才說「佛的德行特別尊貴，身相光明、威德巍峨」。</td><td class="bh9p1-guan"><b>結歸標宗——特尊由方便無礙而立</b>——結語把「示疾非實病」推廣到「諸罪因緣皆是方便」，再回扣品首「其德特尊、威德巍巍」的標宗句，形成完整的釋論閉環。佛之「特尊」正在於祂能於畢竟空中不壞假名、隨緣示現受苦而利生——特尊非一實體，而是悲智雙運、方便無礙的功德總相，這即是全品的中觀結穴。</td></tr></tbody></table><p class="bh9p1-note">卷九第1品「初品放光釋論之餘」：佛德特尊、威德巍巍如須彌山王，論主以「因緣大故果報大」釋其特尊之由，並以「法性身／生身」二身及方便示現，解釋神力無量而實受九罪報之疑（引《維摩詰經》示疾為證）。原文白話中觀三欄對照，含二問二答（經在最頂）。　中觀關鍵詞：特尊相待假名 功德緣起 法性身生身二諦 方便示現不壞假名 示疾非實病</p></div></div>
+<script id="wy-bh9p1-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh9p1Btn"),BOX=document.getElementById("bh9p1Box"),MODAL=document.getElementById("bh9p1Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=0;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c9p1Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh9p1Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH9P1:END-->
 </body></html>
