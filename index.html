@@ -2404,4 +2404,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH9P11:END-->
+<!--WY-BH9P12:BEGIN-->
+<style id="wy-bh9p12-css">
+.bh9p12-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh9p12-fabbox.show{display:block;}
+.bh9p12-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh9p12-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh9p12-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh9p12-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh9p12-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh9p12-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh9p12-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh9p12-modal.open{display:flex;}
+.bh9p12-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh9p12-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh9p12-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh9p12-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh9p12-close:hover{background:#dde2e6;}
+.bh9p12-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh9p12-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh9p12-tbl th,.bh9p12-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh9p12-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh9p12-tbl thead th:nth-child(1){width:32%;}.bh9p12-tbl thead th:nth-child(2){width:41%;}.bh9p12-tbl thead th:nth-child(3){width:27%;}
+.bh9p12-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh9p12-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh9p12-guan{background:#eef2f5;color:#37505f;}
+.bh9p12-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh9p12-tbl tbody tr:nth-child(even) td.bh9p12-guan{background:#e8eef2;}
+.bh9p12-tbl tbody tr:nth-child(even) td.bh9p12-qa{background:#e7ecdb;}
+.bh9p12-tbl b{color:#8b2500;}
+.bh9p12-guan b{color:#2f6b5a;}
+.bh9p12-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh9p12-note b{color:#8b2500;}
+@media(max-width:900px){.bh9p12-fabbox{right:14px;}.bh9p12-tbl{font-size:11px;}.bh9p12-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh9p12-fabbox" id="bh9p12Box"><button class="bh9p12-btn" id="bh9p12Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh9p12-ic">譯</span><span class="bh9p12-ls"><span class="bh9p12-l1">本品 · 原文·白話·中觀</span><span class="bh9p12-l2">白話翻譯表</span></span></button></div><div class="bh9p12-modal" id="bh9p12Modal" role="dialog" aria-modal="true"><div class="bh9p12-card"><button class="bh9p12-close" id="bh9p12Close" type="button" aria-label="關閉">×</button><h3>卷九 · 第12品 白話翻譯表（普明菩薩名號中觀詮釋）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷九・第12品・普明菩薩名號中觀詮釋</p><table class="bh9p12-tbl"><caption>普明菩薩名號中觀詮釋 · 原文｜白話翻譯｜中觀概念（共4段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh9p12-src">爾時，彼世界有菩薩，名曰普明。</td><td>經文說：那時，那個世界之中有一位菩薩，名字叫做「普明」。</td><td class="bh9p12-guan"><b>經文標宗——以名相開啟全品論題</b>——經文僅以一句簡短的敘事，帶出「普明」這個名號，論主隨即以此名號為線索，展開一連串關於「命名」、「假名施設」與「性空」的中觀式追問，是全品論證的文本根源。</td></tr><tr><td class="bh9p12-src">論：「菩薩」義，如〈讚菩薩品〉中已說。</td><td>論主解釋說：關於「菩薩」這個詞的意義，就如同前面〈讚菩薩品〉中已經說明過的一樣，這裡不再重複解釋。</td><td class="bh9p12-guan"><b>略去通義，聚焦特稱</b>——論主先以一句話帶過「菩薩」的通義，把讀者的注意力導向更精細、更耐人尋味的問題——這位菩薩為什麼特別稱為「普明」？這種「略通義、詳別義」的寫作策略，正是本品論證得以深入名相哲學核心的關鍵。</td></tr><tr><td class="bh9p12-qa">問曰：云何名「普明」？</td><td>問曰：為什麼這位菩薩要稱為「普明」呢？</td><td class="bh9p12-guan"><b>設問——命名根據的追問</b>——此問直指名相安立的根據何在：「普明」二字並非隨意的稱呼，其背後必然對應著某種特定的德行或功能，論主藉此展開對「依用立名」的中觀式分析。</td></tr><tr><td class="bh9p12-qa">答曰：其明常照一切世界，是故名「普明」。</td><td>答曰：因為這位菩薩的光明恆常遍照一切世界，所以稱他為「普明」。</td><td class="bh9p12-guan"><b>破斥——依用立名，假名施設而不礙性空</b>——論主的回答揭示了佛教命名法則的核心原則：「普明」之名，是依其「光明遍照一切世界」的功用而安立的假名，並非菩薩自身具有一個獨立不變、可以脫離作用而存在的「普明」自性。名相依因緣（功用）而施設，此正是「假名」與「性空」二諦圓融、無礙並存的具體示現——名可安立，而不礙其性空；性空無礙，而不妨假名施設的方便妙用。</td></tr></tbody></table><p class="bh9p12-note">卷九第12品「普明菩薩名號中觀詮釋」：經文僅簡述彼世界有菩薩名曰普明，論主先以「菩薩」通義略過，轉而聚焦於「何以名普明」的追問，答以「其明常照一切世界，故名普明」，揭示佛教命名法則依用立名、假名施設而不礙性空、性空無礙而不妨假名之理。原文白話中觀三欄對照，含經、論、問、答四層文本。　中觀關鍵詞：依用立名 假名施設 性空無礙 二諦圓融</p></div></div>
+<script id="wy-bh9p12-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh9p12Btn"),BOX=document.getElementById("bh9p12Box"),MODAL=document.getElementById("bh9p12Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=11;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c9p12Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh9p12Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH9P12:END-->
 </body></html>
