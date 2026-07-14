@@ -2098,4 +2098,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH9P5:END-->
+<!--WY-BH9P6:BEGIN-->
+<style id="wy-bh9p6-css">
+.bh9p6-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh9p6-fabbox.show{display:block;}
+.bh9p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh9p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh9p6-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh9p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh9p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh9p6-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh9p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh9p6-modal.open{display:flex;}
+.bh9p6-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh9p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh9p6-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh9p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh9p6-close:hover{background:#dde2e6;}
+.bh9p6-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh9p6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh9p6-tbl th,.bh9p6-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh9p6-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh9p6-tbl thead th:nth-child(1){width:32%;}.bh9p6-tbl thead th:nth-child(2){width:41%;}.bh9p6-tbl thead th:nth-child(3){width:27%;}
+.bh9p6-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh9p6-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh9p6-guan{background:#eef2f5;color:#37505f;}
+.bh9p6-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh9p6-tbl tbody tr:nth-child(even) td.bh9p6-guan{background:#e8eef2;}
+.bh9p6-tbl tbody tr:nth-child(even) td.bh9p6-qa{background:#e7ecdb;}
+.bh9p6-tbl b{color:#8b2500;}
+.bh9p6-guan b{color:#2f6b5a;}
+.bh9p6-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh9p6-note b{color:#8b2500;}
+@media(max-width:900px){.bh9p6-fabbox{right:14px;}.bh9p6-tbl{font-size:11px;}.bh9p6-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh9p6-fabbox" id="bh9p6Box"><button class="bh9p6-btn" id="bh9p6Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh9p6-ic">譯</span><span class="bh9p6-ls"><span class="bh9p6-l1">本品 · 原文·白話·中觀</span><span class="bh9p6-l2">白話翻譯表</span></span></button></div><div class="bh9p6-modal" id="bh9p6Modal" role="dialog" aria-modal="true"><div class="bh9p6-card"><button class="bh9p6-close" id="bh9p6Close" type="button" aria-label="關閉">×</button><h3>卷九 · 第6品 白話翻譯表（破量化之迷）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷九・第六品・破量化之迷</p><table class="bh9p6-tbl"><caption>破量化之迷 · 原文｜白話翻譯｜中觀概念（共4段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh9p6-src">以是華蓋、瓔珞嚴飾故，此三千大千世界皆作金色，及十方如恒河沙等諸佛世界皆亦如是。</td><td>由於這些花蓋、瓔珞的莊嚴裝飾，這個三千大千世界都變成了金色，而十方如恆河沙數那樣多的諸佛世界，也同樣都是如此。</td><td class="bh9p6-guan"><b>經文標宗——莊嚴果相遍及十方</b>——本段以「此界作金色、十方諸佛世界亦如是」，鋪陳佛之神力所感莊嚴果相並非侷限於此一世界，而是遍及十方恆河沙數世界，為下文破斥「佛僅為三千大千世界主」之量化邪見，預先埋下有力的經文事證。</td></tr><tr><td class="bh9p6-src">有人言：「轉輪聖王四世界主，梵天王千世界主，佛三千大千世界主。」是語非實！以是故，佛所變化，乃至十方恆河沙等諸佛世界。</td><td>有人說：「轉輪聖王是四天下的主宰，梵天王是一千個世界的主宰，佛則是三千大千世界的主宰。」這種說法並不真實！因為佛所變化示現的境界，乃是遍及十方如恆河沙那樣多的諸佛世界。</td><td class="bh9p6-guan"><b>破斥——是語非實·拒絕以量化框限佛德</b>——論主先引「轉輪聖王四天下、梵天王千世界、佛三千大千世界」這一套以疆域層層遞增的世俗量化階梯，隨即以「是語非實」四字斷然否定：此說並非「佛的疆域還不夠大」，而是根本否定「以量化、疆界之尺衡量佛德」這整套思惟方式的正當性。並反引經文「佛所變化乃至十方恆沙世界」為事證，以事顯理，證明佛之威德法身遍滿十方、無有邊際，不可比擬於世間君主以疆域大小分高低的階級思惟。</td></tr><tr><td class="bh9p6-qa">問曰：眾生為何必以「疆域」量佛？</td><td>有人問：眾生為什麼總是習慣用「疆域範圍」的大小，來衡量佛陀的境界呢？</td><td class="bh9p6-guan"><b>設問——量化邪見的心理根源</b>——此問將前文邏輯層面的破斥，轉向探究其心理根源：為何凡夫的第一念，總不自覺地要為佛陀劃出一個疆界？此問把「破量化」從一個邏輯結論，引向修行者心地上的自我覺察。</td></tr><tr><td class="bh9p6-qa">答曰：因內心先有「我」與「我所」之鉤鎖，外境方現「界」與「非界」之對立；我執未破，佛界必被劃限。</td><td>回答說：這是因為眾生內心先有「我」與「我所有」這樣的執著鉤鎖，因此在外境上才會顯現出「有界」與「無界」的對立分別；只要我執沒有破除，佛的境界就必然會被凡夫的心念所劃定範圍、加以侷限。</td><td class="bh9p6-guan"><b>我執為根——破邊見即破我執</b>——此答揭示「以疆域量佛」這一邏輯謬誤的真正病根不在論證，而在能思量的那顆「我執」之心：凡夫習慣以「我」為圓心、以「我所」旋出一圈領域感，於是必然也在佛身上劃出一條疆界。唯有徹見「無我」，方知佛之威德「無邊」——我執未破，處處是界；我執若破，佛界即是無邊法界，此正是中觀「破邊見、立大乘法身觀」之核心要義。</td></tr></tbody></table><p class="bh9p6-note">卷九第6品「破量化之迷」：承前品瓔珞莊嚴遍滿十方之後，論主引「轉輪聖王四天下、梵天王千世界、佛三千大千世界主」之世俗量化階梯而斷以「是語非實」，並反引經文「乃至十方恆沙世界」為事證，破斥以疆域量佛之凡夫邪見；復由邏輯層轉入心法層，揭示「以疆域量佛」之病根在於「我」與「我所」之執，我執未破則佛界被限，我執既破則佛德無邊。原文白話中觀三欄對照，經在最頂，論破斥次之，問答殿後。　中觀關鍵詞：是語非實 量化邪見 我執我所 邊見 法身無邊</p></div></div>
+<script id="wy-bh9p6-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh9p6Btn"),BOX=document.getElementById("bh9p6Box"),MODAL=document.getElementById("bh9p6Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c9p6Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh9p6Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH9P6:END-->
 </body></html>
